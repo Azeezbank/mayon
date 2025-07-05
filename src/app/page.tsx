@@ -157,14 +157,14 @@ const Nav = () => {
                                     product launches, and long-term maintenance, helping bussinesses and individuals turn their visions into reality.
                                 </motion.p>
                                 <motion.p ref={ref8} initial={{ opacity: 0, scale: 0.2 }} animate={view8 ? { opacity: 1, scale: 1 } : { opacity: 0, y: 0.2 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.aboutCont}>We are founded with a mission to make technology accessible, scalable and purposeful, Mayon brings a fresh perspectfull to the digital space.
-                                    We are not just developer or designers, we're creative problem-solvers who work at the intersection of design, functionality and innovation. whether
+                                    We are not just developer or designers, we are creative problem-solvers who work at the intersection of design, functionality and innovation. whether
                                     you are launching a new digital product, improving an existing system, or building from the ground up, our team provides the expertise, agility and support you need.
                                 </motion.p>
                             </div>
                             <div className="mt-3 d-flex justify-content-center">
                                 <motion.p ref={ref9} initial={{ opacity: 0, scale: 0.2 }} animate={view9 ? { opacity: 1, scale: 1 } : { opacity: 0, y: 0.2 }} transition={{ duration: 1, ease: "easeIn" }} className={`${Styles.aboutCont} ${Styles.aboutCont_third}`}>At Mayonm we believe that great technology start with understanding people. That's why our process begins with deep user reserch, thoughtfull UX design, and strategic planning. we dont cut corners, we
                                     colaborate closelywith our client to ensure every solution we deliver is intuitive, scalable and visually striking.
-                                    We also understand that launching is just the begining . That's why we offer post lkaunch maintenance, perfomance optimization, and product updates, so you can stay competitive and relevant in the fast-moving digital world.
+                                    We also understand that launching is just the begining . That is why we offer post lkaunch maintenance, perfomance optimization, and product updates, so you can stay competitive and relevant in the fast-moving digital world.
                                 </motion.p>
                             </div>
                         </div>
@@ -215,7 +215,7 @@ const Nav = () => {
                     </motion.div>
                     <motion.div ref={ref17} initial={{ opacity: 0, scale: 0.2 }} animate={view17 ? { opacity: 1, scale: 1 } : { opacity: 0, y: 0.2 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
                         <h5 className="text-center pb-3">Launch & Development</h5>
-                        <p>We deploy your product to the live environment and ensure it's ready for users with full functionality and performance optimization. </p>
+                        <p>We deploy your product to the live environment and ensure it is ready for users with full functionality and performance optimization. </p>
                     </motion.div>
                     <motion.div ref={ref18} initial={{ opacity: 0, scale: 0.2 }} animate={view18 ? { opacity: 1, scale: 1 } : { opacity: 0, y: 0.2 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
                         <h5 className="text-center pb-3">Post-Launch Support</h5>
@@ -284,7 +284,7 @@ const Nav = () => {
                         <div>
                             <h2 className="text-primary">Saliu Johnson</h2>
                             <h5 className="text-white">CEO & Founder, Mayon Innovation and Technology</h5>
-                            <p className="text-white">As the founder and CEO of Mayon innovation and technology, I'm driving by passion for transforming bold ideas into meaningful digital solution. At Mayon, we dont't just build products,
+                            <p className="text-white">As the founder and CEO of Mayon innovation and technology, I am driving by passion for transforming bold ideas into meaningful digital solution. At Mayon, we did not just build products,
                                 we focus on innovation, simplicity and scalability. Our mission is clear: to help bussinesses grow by delivering fast, reliable and user-focusedtech solution that truly work. Whether it is through design, develpment
                                 or ongoing support, we are here to turn vission into value, one project at a time.
                             </p>
@@ -302,7 +302,7 @@ const Nav = () => {
                     <div className={Styles.grid_question}>
                         <div>
                             <motion.h2 ref={ref22} initial={{ opacity: 0, y: 50 }} animate={view22 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className="text-primary pb-4">Have Questions? Reach Out</motion.h2>
-                            <p>We'd love to hear from you. Fill out the form and we will get back to you soon.</p>
+                            <p>We will love to hear from you. Fill out the form and we will get back to you soon.</p>
                             <div className="d-flex">
                                 <i className="bi bi-telephone pe-2 text-primary"></i>
                                 <p>+234 810 340 0258</p>
