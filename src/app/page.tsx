@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import mayon from '../../public/mayon.png';
 import Image from 'next/image';
 import { Menu, X, ArrowDownWideNarrow, MonitorSmartphone } from 'lucide-react';
@@ -12,7 +12,7 @@ import cripto from '../../public/cripto.png';
 import hero_image from '../../public/hero-image.png';
 import papii from '../../public/papii.jpg';
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 
 const Nav = () => {
@@ -22,12 +22,50 @@ const Nav = () => {
     const [ref4, view4] = useInView({ threshold: 1, triggerOnce: false });
     const [ref5, view5] = useInView({ threshold: 1, triggerOnce: false });
     const [ref6, view6] = useInView({ threshold: 1, triggerOnce: false });
-    const [ref7, view7] = useInView({ threshold: 1, triggerOnce: true });
-    const [ref9, view9] = useInView({ threshold: 1, triggerOnce: true });
     const [ref10, view10] = useInView({ threshold: 1, triggerOnce: true });
     const [ref20, view20] = useInView({ threshold: 1, triggerOnce: false });
     const [ref21, view21] = useInView({ threshold: 1, triggerOnce: false });
     const [ref22, view22] = useInView({ threshold: 1, triggerOnce: false });
+
+    const [count, setCount] = useState(0);
+    const [count1, setCount1] = useState(0);
+    const controls = useAnimation();
+    const { ref, inView } = useInView({ threshold: 1 });
+    const [ref1, view1] = useInView({ threshold: 1});
+
+    useEffect(() => {
+        if (inView) {
+            let start = 1;
+            const end = 50;
+            const duration = 1000; // in ms
+            const stepTime = duration / (end - start);
+
+            const interval = setInterval(() => {
+                setCount(prev => {
+                    if (prev < end) return prev + 1;
+                    clearInterval(interval);
+                    return end;
+                });
+            }, stepTime);
+        }
+    }, [inView]);
+
+    useEffect(() => {
+        if (view1) {
+            let start = 1;
+            const end = 50;
+            const duration = 1000; // in ms
+            const stepTime = duration / (end - start);
+
+            const interval1 = setInterval(() => {
+                setCount1(prev => {
+                    if (prev < end) return prev + 1;
+                    clearInterval(interval1);
+                    return end;
+                });
+            }, stepTime);
+        }
+    }, [view1]);   
     return (
         <>
             <div className="home-page">
@@ -70,7 +108,7 @@ const Nav = () => {
 
                     <div className={Styles.grid_main}>
                         <div className="text-white pt-5 hero-head">
-                            <motion.h3 initial={{ opacity: 0, y: -50 }} whileInView={{opacity: 1, y: 0}} viewport={{once: false}} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas Through Tech.</motion.h3>
+                            <motion.h3 initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas Through Tech.</motion.h3>
                             <p>We design and build apps. websites, and custom tech solutions to turn your to scalable digital products.</p>
                             <button className={Styles.work_with_us} type="button">Work with us <i className="bi bi-arrow-right"></i>  </button>
                         </div>
@@ -141,17 +179,17 @@ const Nav = () => {
                     <div className="large-padd">
                         <div className="ps-3 pe-3">
                             <div className={Styles.grid_about}>
-                                <motion.p ref={ref7} initial={{ opacity: 0, scale: 0.2 }} animate={view7 ? { opacity: 1, scale: 1 } : { opacity: 0, y: 0.2 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.aboutCont}>Mayon innobvation and technology is a forward thinking digital company dedicated to transforming
+                                <motion.p initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.aboutCont}>Mayon innobvation and technology is a forward thinking digital company dedicated to transforming
                                     ideas into impactful technology solutions. We specialize in UI/UX design, web and mobile app development, wireframing and prototyping,
                                     product launches, and long-term maintenance, helping bussinesses and individuals turn their visions into reality.
                                 </motion.p>
-                                <motion.p  initial={{ opacity: 0, scale: 0.2 }} whileInView={{opacity: 1, scale: 1}} viewport={{once: true}} transition={{ duration: 1, ease: "easeIn" }} className={Styles.aboutCont}>We are founded with a mission to make technology accessible, scalable and purposeful, Mayon brings a fresh perspectfull to the digital space.
+                                <motion.p initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.aboutCont}>We are founded with a mission to make technology accessible, scalable and purposeful, Mayon brings a fresh perspectfull to the digital space.
                                     We are not just developer or designers, we are creative problem-solvers who work at the intersection of design, functionality and innovation. whether
                                     you are launching a new digital product, improving an existing system, or building from the ground up, our team provides the expertise, agility and support you need.
                                 </motion.p>
                             </div>
                             <div className="mt-3 d-flex justify-content-center">
-                                <motion.p ref={ref9} initial={{ opacity: 0, scale: 0.2 }} animate={view9 ? { opacity: 1, scale: 1 } : { opacity: 0, y: 0.2 }} transition={{ duration: 1, ease: "easeIn" }} className={`${Styles.aboutCont} ${Styles.aboutCont_third}`}>At Mayonm we believe that great technology start with understanding people. That is why our process begins with deep user reserch, thoughtfull UX design, and strategic planning. we dont cut corners, we
+                                <motion.p initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 1, ease: "easeIn" }} className={`${Styles.aboutCont} ${Styles.aboutCont_third}`}>At Mayonm we believe that great technology start with understanding people. That is why our process begins with deep user reserch, thoughtfull UX design, and strategic planning. we dont cut corners, we
                                     colaborate closelywith our client to ensure every solution we deliver is intuitive, scalable and visually striking.
                                     We also understand that launching is just the begining . That is why we offer post lkaunch maintenance, perfomance optimization, and product updates, so you can stay competitive and relevant in the fast-moving digital world.
                                 </motion.p>
@@ -160,11 +198,13 @@ const Nav = () => {
 
                         <div className={Styles.happy}>
                             <div>
-                                <h1 className="text-primary">50+</h1>
+                                <motion.h1 ref={ref} initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} className="text-primary">{count} +</motion.h1>
                                 <h6 className="text-white">Happy Clients</h6>
                             </div>
                             <div>
-                                <h1 className="text-danger">50+</h1>
+                                <motion.h1 ref={ref1} initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} className="text-danger">{count1} +</motion.h1>
                                 <h6 className="text-white">Project delivered</h6>
                             </div>
                         </div>
@@ -176,37 +216,37 @@ const Nav = () => {
                     <motion.h4 ref={ref10} initial={{ opacity: 0, y: 50 }} animate={view10 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} >More About us</motion.h4>
                 </div>
 
-                <motion.p initial={{ opacity: 0, x: -100 }} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{ duration: 1, ease: "easeIn" }} className="text-white text-center pb-3">We followed structured, human-centered approach to ensure every product we build is functional, user friendly and impactful.</motion.p>
+                <motion.p initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className="text-white text-center pb-3">We followed structured, human-centered approach to ensure every product we build is functional, user friendly and impactful.</motion.p>
                 <div className={Styles.grid_more_about}>
-                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{opacity: 1, scale: 1}} viewport={{once: false}} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
                         <h5 className="text-center pb-3">Discovery & Research</h5>
                         <p>We begin understanding your goals, target users, competitors, and project scope. this helps us define the right strategy from the start.</p>
                     </motion.div>
-                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{opacity: 1, scale: 1}} viewport={{once: false}} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
                         <h5 className="text-center pb-3">Wireframing & Prototyping</h5>
                         <p>We create Wireframe and interactive prototypes to visualize the structure and flow of your productt before developmrnt begins. </p>
                     </motion.div>
-                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{opacity: 1, scale: 1}} viewport={{once: false}} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
                         <h5 className="text-center pb-3">Planning and strategy</h5>
                         <p>We outline the user flow, technical requirements and design roadmap. This phase sets the foundation for the designs and development begins. </p>
                     </motion.div>
-                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{opacity: 1, scale: 1}} viewport={{once: false}} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
                         <h5 className="text-center pb-3">UI/UX Design</h5>
                         <p>We design clean, modern and user-friendly interface that align with your brand and deliver a smooth user experience. </p>
                     </motion.div>
-                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{opacity: 1, scale: 1}} viewport={{once: false}} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
                         <h5 className="text-center pb-3">Development</h5>
                         <p>our developrs bring the design to life with clean responsive and scalable code for both web and mobile platform. </p>
                     </motion.div>
-                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{opacity: 1, scale: 1}} viewport={{once: false}} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
                         <h5 className="text-center pb-3">Testing and quality assurance</h5>
                         <p>We rigorousely test the product across devices and scenarios to ensure everything workd perfectly before launch. </p>
                     </motion.div>
-                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{opacity: 1, scale: 1}} viewport={{once: false}} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
                         <h5 className="text-center pb-3">Launch & Development</h5>
                         <p>We deploy your product to the live environment and ensure it is ready for users with full functionality and performance optimization. </p>
                     </motion.div>
-                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{opacity: 1, scale: 1}} viewport={{once: false}} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                    <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
                         <h5 className="text-center pb-3">Post-Launch Support</h5>
                         <p>We provide ongoing support, updates fix bugs and improvement to ensure your product continues to evolve and perform well. </p>
                     </motion.div>
@@ -222,44 +262,44 @@ const Nav = () => {
 
                     <div className={Styles.work_container}>
                         <div className={Styles.work_border}>
-                            <motion.div initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.work_text}>
+                            <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
                                 <h4 className="text-center">Easy Travel</h4>
                                 <p className="text-center">EASY TRAVEL is a simple and user-friendly traveling website for exploring destination and booking with ease</p>
                                 <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
                             </motion.div>
-                            <motion.div initial={{opacity: 0, x: 100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.ease_imgDiv}>
+                            <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
                                 <Image className={Styles.ease_img} src={gateway} alt="Travel Ease" />
                             </motion.div>
                         </div>
                         <div className={Styles.work_border}>
-                            <motion.div initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.work_text}>
+                            <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
                                 <h4 className="text-center">Global VPN</h4>
                                 <p className="text-center">GLOBAL VPN is a fast and secure mobile app that allows users browse privately and access content from anywhere.</p>
                                 <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
                             </motion.div>
-                            <motion.div initial={{opacity: 0, x: 100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.ease_imgDiv}>
+                            <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
                                 <Image className={Styles.ease_img} src={global} alt="Travel Ease" />
                             </motion.div>
                         </div>
                         <div className={Styles.work_border}>
-                            <motion.div initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.work_text}>
+                            <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
                                 <h4 className="text-center">Music Play</h4>
                                 <p className="text-center">MUSIC PLAY is a sleek music app build to let user easily play, organize and enjoy their favorite song anytime, it features a clean interface,
                                 </p>
                                 <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
                             </motion.div>
-                            <motion.div initial={{opacity: 0, x: 100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.ease_imgDiv}>
+                            <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
                                 <Image className={Styles.ease_img} src={welcome} alt="Travel Ease" />
                             </motion.div>
                         </div>
                         <div className={Styles.work_border}>
-                            <motion.div initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.work_text}>
+                            <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
                                 <h4 className="text-center">Cryptra Website</h4>
                                 <p className="text-center">CRIPTRA is a secure website for trading and managing digital assets.
                                 </p>
                                 <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
                             </motion.div>
-                            <motion.div initial={{opacity: 0, x: 100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.ease_imgDiv}>
+                            <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
                                 <Image className={Styles.ease_img} src={cripto} alt="Travel Ease" />
                             </motion.div>
                         </div>
@@ -267,8 +307,8 @@ const Nav = () => {
                 </div>
                 <div className="large-padd pt-5 pb-4">
                     <motion.h1 ref={ref21}
-                    initial={{ opacity: 0, y: 50 }} animate={view21 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }}
-                    className="text-white text-center pt-5">At the Helm of Mayon</motion.h1>
+                        initial={{ opacity: 0, y: 50 }} animate={view21 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }}
+                        className="text-white text-center pt-5">At the Helm of Mayon</motion.h1>
                     <div className={Styles.grid_passport}>
                         <div>
                             <h2 className="text-primary">Saliu Johnson</h2>
