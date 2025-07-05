@@ -12,7 +12,6 @@ import cripto from '../../public/cripto.png';
 import hero_image from '../../public/hero-image.png';
 import papii from '../../public/papii.jpg';
 import { useInView } from "react-intersection-observer";
-import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
 
@@ -40,9 +39,6 @@ const Nav = () => {
     const [ref20, view20] = useInView({ threshold: 1, triggerOnce: false });
     const [ref21, view21] = useInView({ threshold: 1, triggerOnce: false });
     const [ref22, view22] = useInView({ threshold: 1, triggerOnce: false });
-    const [ref23, view23] = useInView({ threshold: 1, triggerOnce: false });
-    const [ref24, view24] = useInView({ threshold: 1, triggerOnce: false });
-    const [ref25, view25] = useInView({ threshold: 1, triggerOnce: false });
     return (
         <>
             <div className="home-page">
