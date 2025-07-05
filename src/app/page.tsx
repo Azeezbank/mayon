@@ -26,14 +26,6 @@ const Nav = () => {
     const [ref7, view7] = useInView({ threshold: 1, triggerOnce: true });
     const [ref9, view9] = useInView({ threshold: 1, triggerOnce: true });
     const [ref10, view10] = useInView({ threshold: 1, triggerOnce: true });
-    const [ref11, view11] = useInView({ threshold: 1, triggerOnce: false });
-    const [ref12, view12] = useInView({ threshold: 1, triggerOnce: true });
-    const [ref13, view13] = useInView({ threshold: 1, triggerOnce: true });
-    const [ref14, view14] = useInView({ threshold: 1, triggerOnce: true });
-    const [ref15, view15] = useInView({ threshold: 1, triggerOnce: true });
-    const [ref16, view16] = useInView({ threshold: 1, triggerOnce: true });
-    const [ref17, view17] = useInView({ threshold: 1, triggerOnce: true });
-    const [ref18, view18] = useInView({ threshold: 1, triggerOnce: true });
     const [ref19, view19] = useInView({ threshold: 1, triggerOnce: true });
     const [ref20, view20] = useInView({ threshold: 1, triggerOnce: false });
     const [ref21, view21] = useInView({ threshold: 1, triggerOnce: false });
