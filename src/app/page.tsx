@@ -156,7 +156,7 @@ const Nav = () => {
                                     ideas into impactful technology solutions. We specialize in UI/UX design, web and mobile app development, wireframing and prototyping,
                                     product launches, and long-term maintenance, helping bussinesses and individuals turn their visions into reality.
                                 </motion.p>
-                                <motion.p ref={ref8} initial={{ opacity: 0, scale: 0.2 }} animate={view8 ? { opacity: 1, scale: 1 } : { opacity: 0, y: 0.2 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.aboutCont}>We are founded with a mission to make technology accessible, scalable and purposeful, Mayon brings a fresh perspectfull to the digital space.
+                                <motion.p  initial={{ opacity: 0, scale: 0.2 }} whileInView={{opacity: 1, scale: 1}} viewport={{once: true}} transition={{ duration: 1, ease: "easeIn" }} className={Styles.aboutCont}>We are founded with a mission to make technology accessible, scalable and purposeful, Mayon brings a fresh perspectfull to the digital space.
                                     We are not just developer or designers, we are creative problem-solvers who work at the intersection of design, functionality and innovation. whether
                                     you are launching a new digital product, improving an existing system, or building from the ground up, our team provides the expertise, agility and support you need.
                                 </motion.p>
