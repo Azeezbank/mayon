@@ -12,7 +12,7 @@ import cripto from '../../public/cripto.png';
 import hero_image from '../../public/hero-image.png';
 import papii from '../../public/papii.jpg';
 import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 const Nav = () => {
@@ -29,7 +29,6 @@ const Nav = () => {
 
     const [count, setCount] = useState(0);
     const [count1, setCount1] = useState(0);
-    const controls = useAnimation();
     const { ref, inView } = useInView({ threshold: 1 });
     const [ref1, view1] = useInView({ threshold: 1});
 
