@@ -1,42 +1,101 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
+nav {
+    background-color: #000;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    position: fixed;
+    z-index: 2;
+}
+.nav_logo {
+  width: 50px;
+  height: 40px;
+  background-color: #fff;
+  margin: 5px 0px 3px 5px;
+}
+.nav-btn {
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 6px;
+}
+ .nav_visibleLogo {
+  background-color: #fff;
+  width: 80px;
+  height: 40px;
+  margin: 20px 0px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@media (max-width: 750px) {
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
 }
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.nav_menu {
+    width: 100%;
+    padding-left: 15px;
+    border-top: 1px solid grey;
+    padding-top: 10px;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.nav_menu li {
+  list-style: none;
+  padding-bottom: 10px;
 }
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
+.nav_menu li a {
   text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+}
+.home-page {
+    width: 100%;
+}
+.aside {
+    width: 170px;
+    min-height: 100vh;;
+    background-color: #212529;
+    position: fixed;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+.nav-visible {
+    display: block;
+}
+.large_menu {
+    display: none;
+}
+.nav-flex {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+@media (min-width: 750px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .aside {
+    display: none;
+  }
+  .large_menu {
+    display: flex;
+    list-style: none;
+    padding-right: 30px;
+  }
+  .large_menu li a {
+    text-decoration: none;
+    padding: 0px 10px;
+    color: #fff;
+  }
+  .large-padd {
+    padding: 0px 10%;
   }
 }
