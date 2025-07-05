@@ -71,7 +71,7 @@ const Nav = () => {
 
                     <div className={Styles.grid_main}>
                         <div className="text-white pt-5 hero-head">
-                            <motion.h3 ref={ref1} initial={{ opacity: 0, y: -40 }} animate={view1 ? { opacity: 1, y: 0 } : { opacity: 0, y: -40 }} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas Through Tech.</motion.h3>
+                            <motion.h3 initial={{ opacity: 0, y: -50 }} whileInView={{opacity: 1, y: 0}} viewport={{once: false}} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas Through Tech.</motion.h3>
                             <p>We design and build apps. websites, and custom tech solutions to turn your to scalable digital products.</p>
                             <button className={Styles.work_with_us} type="button">Work with us <i className="bi bi-arrow-right"></i>  </button>
                         </div>
@@ -223,46 +223,46 @@ const Nav = () => {
 
                     <div className={Styles.work_container}>
                         <div className={Styles.work_border}>
-                            <div className={Styles.work_text}>
+                            <motion.div initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.work_text}>
                                 <h4 className="text-center">Easy Travel</h4>
                                 <p className="text-center">EASY TRAVEL is a simple and user-friendly traveling website for exploring destination and booking with ease</p>
                                 <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
-                            </div>
+                            </motion.div>
                             <motion.div initial={{opacity: 0, x: 100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.ease_imgDiv}>
                                 <Image className={Styles.ease_img} src={gateway} alt="Travel Ease" />
                             </motion.div>
                         </div>
                         <div className={Styles.work_border}>
-                            <div className={Styles.work_text}>
+                            <motion.div initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.work_text}>
                                 <h4 className="text-center">Global VPN</h4>
                                 <p className="text-center">GLOBAL VPN is a fast and secure mobile app that allows users browse privately and access content from anywhere.</p>
                                 <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
-                            </div>
-                            <div className={Styles.ease_imgDiv}>
+                            </motion.div>
+                            <motion.div initial={{opacity: 0, x: 100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.ease_imgDiv}>
                                 <Image className={Styles.ease_img} src={global} alt="Travel Ease" />
-                            </div>
+                            </motion.div>
                         </div>
                         <div className={Styles.work_border}>
-                            <div className={Styles.work_text}>
+                            <motion.div initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.work_text}>
                                 <h4 className="text-center">Music Play</h4>
                                 <p className="text-center">MUSIC PLAY is a sleek music app build to let user easily play, organize and enjoy their favorite song anytime, it features a clean interface,
                                 </p>
                                 <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
-                            </div>
-                            <div className={Styles.ease_imgDiv}>
+                            </motion.div>
+                            <motion.div initial={{opacity: 0, x: 100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.ease_imgDiv}>
                                 <Image className={Styles.ease_img} src={welcome} alt="Travel Ease" />
-                            </div>
+                            </motion.div>
                         </div>
                         <div className={Styles.work_border}>
-                            <div className={Styles.work_text}>
+                            <motion.div initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.work_text}>
                                 <h4 className="text-center">Cryptra Website</h4>
                                 <p className="text-center">CRIPTRA is a secure website for trading and managing digital assets.
                                 </p>
                                 <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
-                            </div>
-                            <div className={Styles.ease_imgDiv}>
+                            </motion.div>
+                            <motion.div initial={{opacity: 0, x: 100}} whileInView={{opacity: 1, x: 0}} viewport={{once: false}} transition={{duration: 1.5, ease: "easeInOut"}} className={Styles.ease_imgDiv}>
                                 <Image className={Styles.ease_img} src={cripto} alt="Travel Ease" />
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>

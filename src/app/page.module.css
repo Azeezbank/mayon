@@ -103,6 +103,7 @@
   padding: 15px 15px 10px 15px;
   border-radius: 8px;
   position: relative;
+  overflow-x: hidden;
 }
 .work_border:hover {
   border-bottom: 1px solid #0d6efd;

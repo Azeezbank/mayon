@@ -24,7 +24,7 @@ nav {
   background-color: #fff;
   width: 80px;
   height: 40px;
-  margin: 20px 0px;
+  margin: 4px 0px;
 }
 .hero-head {
   position: relative;
@@ -62,7 +62,7 @@ nav {
     background-color: #212529;
     position: fixed;
     left: 0;
-    z-index: 2;
+    z-index: 4;
     display: none;
 }
 .nav-visible {
