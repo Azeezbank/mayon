@@ -34,10 +34,10 @@ const Nav = () => {
 
     useEffect(() => {
         if (inView) {
-            let start = 1;
+            let read = 1;
             const end = 50;
             const duration = 1000; // in ms
-            const stepTime = duration / (end - start);
+            const stepTime = duration / (end - read);
 
             const interval = setInterval(() => {
                 setCount(prev => {
@@ -51,10 +51,10 @@ const Nav = () => {
 
     useEffect(() => {
         if (view1) {
-            let start = 1;
+            let read = 1;
             const end = 50;
             const duration = 1000; // in ms
-            const stepTime = duration / (end - start);
+            const stepTime = duration / (end - read);
 
             const interval1 = setInterval(() => {
                 setCount1(prev => {
