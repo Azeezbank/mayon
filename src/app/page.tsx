@@ -17,7 +17,6 @@ import { motion } from "framer-motion";
 
 const Nav = () => {
     const [isNav, setIsnav] = useState(false);
-    const [ref1, view1] = useInView({ threshold: 1, triggerOnce: true });
     const [ref2, view2] = useInView({ threshold: 1, triggerOnce: false });
     const [ref3, view3] = useInView({ threshold: 1, triggerOnce: false });
     const [ref4, view4] = useInView({ threshold: 1, triggerOnce: false });
