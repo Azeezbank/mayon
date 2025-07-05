@@ -34,10 +34,10 @@ const Nav = () => {
 
     useEffect(() => {
         if (inView) {
-            let read = 1;
+            const start = 1;
             const end = 50;
             const duration = 1000; // in ms
-            const stepTime = duration / (end - read);
+            const stepTime = duration / (end - start);
 
             const interval = setInterval(() => {
                 setCount(prev => {
@@ -51,10 +51,10 @@ const Nav = () => {
 
     useEffect(() => {
         if (view1) {
-            let read = 1;
+            const start = 1;
             const end = 50;
             const duration = 1000; // in ms
-            const stepTime = duration / (end - read);
+            const stepTime = duration / (end - start);
 
             const interval1 = setInterval(() => {
                 setCount1(prev => {
@@ -350,7 +350,7 @@ const Nav = () => {
                                 <label htmlFor="email">Email Address</label> <br />
                                 <input type="email" id="email" placeholder="Enter Email Address" /> <br />
                                 <label htmlFor="topic">Your Topic</label> <br />
-                                <input type="text" id="topic" placeholder="Enter Your Topic" /> <br />
+                                <textarea className={Styles.textarea} placeholder="Enter Your Message" rows={5}></textarea> <br/>
                                 <button type="button" className="btn btn-primary">Send Message</button>
                             </form>
                         </div>
