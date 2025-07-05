@@ -29,6 +29,9 @@ nav {
 .hero-head {
   position: relative;
 }
+.relative {
+  position: relative;
+}
 
 @media (max-width: 750px) {
 .nav-flex {

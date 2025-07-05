@@ -182,9 +182,9 @@ const Nav = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-black pe-3 ps-3" id="about">
+            <div className="bg-black pe-3 ps-3 relative" id="about">
                 <div className={Styles.more_about}>
-                    <motion.h4 ref={ref10} initial={{ opacity: 0, x: -100 }} animate={view10 ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }} transition={{ duration: 1, ease: "easeIn" }} >More About us</motion.h4>
+                    <motion.h4 ref={ref10} initial={{ opacity: 0, y: 50 }} animate={view10 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} >More About us</motion.h4>
                 </div>
 
                 <motion.p ref={ref11} initial={{ opacity: 0, y: 50 }} animate={view11 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className="text-white text-center pb-3">We followed structured, human-centered approach to ensure every product we build is functional, user friendly and impactful.</motion.p>
