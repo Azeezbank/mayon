@@ -162,7 +162,7 @@ const Nav = () => {
                                 </motion.p>
                             </div>
                             <div className="mt-3 d-flex justify-content-center">
-                                <motion.p ref={ref9} initial={{ opacity: 0, scale: 0.2 }} animate={view9 ? { opacity: 1, scale: 1 } : { opacity: 0, y: 0.2 }} transition={{ duration: 1, ease: "easeIn" }} className={`${Styles.aboutCont} ${Styles.aboutCont_third}`}>At Mayonm we believe that great technology start with understanding people. That's why our process begins with deep user reserch, thoughtfull UX design, and strategic planning. we dont cut corners, we
+                                <motion.p ref={ref9} initial={{ opacity: 0, scale: 0.2 }} animate={view9 ? { opacity: 1, scale: 1 } : { opacity: 0, y: 0.2 }} transition={{ duration: 1, ease: "easeIn" }} className={`${Styles.aboutCont} ${Styles.aboutCont_third}`}>At Mayonm we believe that great technology start with understanding people. That is why our process begins with deep user reserch, thoughtfull UX design, and strategic planning. we dont cut corners, we
                                     colaborate closelywith our client to ensure every solution we deliver is intuitive, scalable and visually striking.
                                     We also understand that launching is just the begining . That is why we offer post lkaunch maintenance, perfomance optimization, and product updates, so you can stay competitive and relevant in the fast-moving digital world.
                                 </motion.p>
