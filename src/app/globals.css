@@ -26,6 +26,9 @@ nav {
   height: 40px;
   margin: 20px 0px;
 }
+.hero-head {
+  position: relative;
+}
 
 @media (max-width: 750px) {
 .nav-flex {

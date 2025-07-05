@@ -17,7 +17,7 @@ import { motion } from "framer-motion";
 
 const Nav = () => {
     const [isNav, setIsnav] = useState(false);
-    const [ref1, view1] = useInView({ threshold: 1, triggerOnce: false });
+    const [ref1, view1] = useInView({ threshold: 1, triggerOnce: true });
     const [ref2, view2] = useInView({ threshold: 1, triggerOnce: false });
     const [ref3, view3] = useInView({ threshold: 1, triggerOnce: false });
     const [ref4, view4] = useInView({ threshold: 1, triggerOnce: false });
@@ -80,8 +80,8 @@ const Nav = () => {
                 <main className={Styles.main_page} id="home">
 
                     <div className={Styles.grid_main}>
-                        <div className="text-white pt-5 position-relative">
-                            <motion.h2 ref={ref1} initial={{ opacity: 0, y: -50 }} animate={view1 ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas Through Tech.</motion.h2>
+                        <div className="text-white pt-5 hero-head">
+                            <motion.h3 ref={ref1} initial={{ opacity: 0, y: -40 }} animate={view1 ? { opacity: 1, y: 0 } : { opacity: 0, y: -40 }} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas Through Tech.</motion.h3>
                             <p>We design and build apps. websites, and custom tech solutions to turn your to scalable digital products.</p>
                             <button className={Styles.work_with_us} type="button">Work with us <i className="bi bi-arrow-right"></i>  </button>
                         </div>
