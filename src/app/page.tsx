@@ -126,7 +126,7 @@ const Nav = () => {
                         <div className={Styles.grid_service}>
                             <motion.div ref={ref3} initial={{ opacity: 0, y: 50 }} animate={view3 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
                                 <h3 className={Styles.service_emoji}><i className={"bi bi-ui-checks me-3"}></i></h3>
-                                <div>
+                                <div  className="ms-2">
                                     <h5>Wireframing & Prototyping</h5>
                                     <p>Clear visual plan before development begins</p>
                                 </div>
@@ -134,7 +134,7 @@ const Nav = () => {
 
                             <motion.div ref={ref4} initial={{ opacity: 0, y: 50 }} animate={view4 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
                                 <h3 className={Styles.service_emoji}><i className="me-3"><ArrowDownWideNarrow /></i></h3>
-                                <div>
+                                <div className="ms-2">
                                     <h5>UI/UX Design</h5>
                                     <p>Beautiful, intuitive designs built for real users.</p>
                                 </div>
@@ -142,7 +142,7 @@ const Nav = () => {
 
                             <motion.div ref={ref5} initial={{ opacity: 0, y: 50 }} animate={view5 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
                                 <h3 className={Styles.service_emoji}><i className={"me-3"}><MonitorSmartphone /></i></h3>
-                                <div>
+                                <div  className="ms-2">
                                     <h5>App & Web Development</h5>
                                     <p>secure-responsive and scalable buils for all platforms.</p>
                                 </div>
@@ -150,7 +150,7 @@ const Nav = () => {
 
                             <motion.div ref={ref6} initial={{ opacity: 0, y: 50 }} animate={view6 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
                                 <h3 className={Styles.service_emoji}><i className={"bi bi-rocket-takeoff me-3"}></i></h3>
-                                <div>
+                                <div  className="ms-2">
                                     <h5>Launching and maintenance</h5>
                                     <p>Post-launch support to ensure everything runs smoothly</p>
                                 </div>
@@ -294,7 +294,7 @@ const Nav = () => {
                         <div className={Styles.work_border}>
                             <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
                                 <h4 className="text-center">Cryptra Website</h4>
-                                <p className="text-center">CRIPTRA is a secure website for trading and managing digital assets.
+                                <p className="text-center">CRYPTRA is a secure website for trading and managing digital assets.
                                 </p>
                                 <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
                             </motion.div>
@@ -382,7 +382,7 @@ const Nav = () => {
                         </div>
                         <div>
                             <h5>Contact</h5>
-                            <p>React to us easily</p>
+                            <p>Reach to us easily</p>
                             <p>Mayoninnovation@gmail.com</p>
                             <p>+234 810 340 0258</p>
                         </div>
