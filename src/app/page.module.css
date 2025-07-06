@@ -1,5 +1,5 @@
 .main_page {
-  padding: 0px 15px 15px 15px;
+  /* padding: 0px 15px 15px 15px; */
   background-color: #000;
   height: 700px;
   display: flex;
@@ -304,9 +304,6 @@ top: 30px;
 }
 .work_border {
   padding-top: 20px;
-}
-.main_page {
-padding: 0px 60px
 }
 .footer {
   display: grid;
