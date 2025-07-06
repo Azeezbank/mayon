@@ -104,7 +104,7 @@ const Nav = () => {
                     </div>
                 </nav>
 
-                <div className="bg-black pb-5 ps-2 pe-2 pt-5" id="service">
+                <div className="bg-black pb-5 ps-2 pe-2" id="service">
                     <div className="large-padd">
                         <main className={Styles.main_page} id="home">
                             <div className={Styles.grid_main}>
