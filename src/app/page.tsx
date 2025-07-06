@@ -108,7 +108,7 @@ const Nav = () => {
                     <div className="large-padd">
                         <main className={Styles.main_page} id="home">
                             <div className={Styles.grid_main}>
-                                <div className="text-white pt-5 hero-head">
+                                <div className="text-white hero-head">
                                     <motion.h3 initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas <br /> Through Tech.</motion.h3>
                                     <p>We design and build apps. websites, and custom tech solutions to turn your to scalable digital products.</p>
                                     <button className={Styles.work_with_us} type="button">Work with us <i className="bi bi-arrow-right pt-1 fw-bold"></i>  </button>
