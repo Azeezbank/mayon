@@ -151,8 +151,7 @@ const Nav = () => {
                                 </div>
                             </motion.div>
                         </div>
-                    </div>
-                </div>
+                    
 
                 <div className="bg-black">
                     <h2 className={Styles.about_sp}>
@@ -160,7 +159,7 @@ const Nav = () => {
 
                     </h2>
 
-                    <div className="large-padd">
+                    {/* <div className="large-padd"> */}
                         <div className="ps-3 pe-3">
 
                             <p className="text-white">Mayon Innovation and Technology is a forward thinking digital company dedicated to transforming ideas into impactful technology solutions. We specialize in UI/UX design, web and mobile app development, wireframing and prototyping, product launches, and long-term maintenance, helping businesses and individuals turn their visions into reality. <br />
@@ -185,7 +184,7 @@ const Nav = () => {
                                 <h6 className="text-white">Project delivered</h6>
                             </div>
                         </div>
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
             <div className="bg-black pe-3 ps-3 relative" id="about">
@@ -230,7 +229,7 @@ const Nav = () => {
                 </div>
             </div>
             <div className="bg-black pe-3 ps-3 pt-5" id="company">
-                <div className="large-padd pt-4">
+                {/* <div className="large-padd pt-4"> */}
                     <motion.div ref={ref20} initial={{ opacity: 0, y: -50 }} animate={view20 ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.servicesDiv}>
                         <h2 className="text-white ps-3 pe-3">Our Work</h2>
                     </motion.div>
@@ -285,8 +284,8 @@ const Nav = () => {
                             </motion.div>
                         </div>
                     </div>
-                </div>
-                <div className="large-padd pt-5 pb-4">
+                {/* </div> */}
+                {/* <div className="large-padd pt-5 pb-4"> */}
                     <motion.h1 ref={ref21}
                         initial={{ opacity: 0, y: 50 }} animate={view21 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }}
                         className="text-white text-center pt-5">At the Helm of Mayon</motion.h1>
@@ -304,11 +303,11 @@ const Nav = () => {
                         </div>
                     </div>
                     <div className="d-flex justify-content-center pt-5 pb-4"><button type="button" className={Styles.meet}>Meet The Team</button></div>
-                </div>
+                {/* </div> */}
             </div>
 
             <div className="bg-dark text-white pt-4 ps-3 pe-3 pb-3" id="contact">
-                <div className="large-padd pt-5 pb-5">
+                {/* <div className="large-padd pt-5 pb-5"> */}
 
                     <div className={Styles.grid_question}>
                         <div className={Styles.shadow_blue_question}>
@@ -341,10 +340,10 @@ const Nav = () => {
                             </form>
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
             </div>
             <footer className={Styles.footer}>
-                <div className="large-padd">
+                {/* <div className="large-padd"> */}
                     <div className={Styles.grid_footer}>
                         <h4 className={Styles.mayon_f_logo}>
                             <span className={Styles.mayon_m}>M</span>
@@ -373,8 +372,10 @@ const Nav = () => {
                             <p>+234 810 340 0258</p>
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
             </footer>
+            </div>
+                </div>
         </>
     )
 };

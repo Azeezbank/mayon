@@ -53,9 +53,6 @@ nav {
 .hero-head h3 {
   font-size: 30px;;
 }
-.hero-head p {
-  font-size: 10px;
-}
 .relative {
   position: relative;
 }
@@ -104,7 +101,8 @@ nav {
     padding-right: 15px;
 }
 .hero-head p {
-  max-width: 60%;
+  max-width: 300px;
+  /* font-size: 10px; */
 }
 }
 
