@@ -1,6 +1,5 @@
 'use client';
 import React, { useState, useEffect } from "react";
-import mayon from '../../public/mayon.png';
 import Image from 'next/image';
 import { Grip, X, ArrowDownWideNarrow, MonitorSmartphone, Rocket, LayoutList } from 'lucide-react';
 import Styles from './page.module.css';
