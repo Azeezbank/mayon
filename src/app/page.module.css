@@ -223,12 +223,14 @@
 }
 .mayon_w {
   color: #0d6efd;
-  letter-spacing: 1px;
+  letter-spacing: 1.3px;
+  width: 100px;
 }
 .innovation {
 position: absolute;
 top: 30px;
-  font-size: 6px;
+  font-size: 5.9px;
+  text-align: center;
 }
 .shadow_blue {
   display: flex;

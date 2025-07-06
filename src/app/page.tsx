@@ -174,7 +174,7 @@ const Nav = () => {
                                         whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} className="text-primary text-center">{count} +</motion.h1>
                                     <h6 className="text-white">Happy Clients</h6>
                                     <div className={Styles.shadow_blue_client}>
-                                        <span>g</span>
+                                        <span></span>
                                     </div>
                                     <div></div>
                                 </div>
