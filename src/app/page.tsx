@@ -7,7 +7,7 @@ import gateway from '../../public/gateway.png';
 import welcome from '../../public/two-phones.png';
 import global from '../../public/global.png';
 import cripto from '../../public/cripto.png';
-import hero_image from '../../public/hero-image.png';
+import hero_image from '../../public/mayon-bg.jpg';
 import papii from '../../public/papii.jpg';
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
@@ -68,12 +68,12 @@ const Nav = () => {
             <div className="home-page">
                 <aside className={`aside ${isNav ? 'nav-visible' : 'nav-hidden'}`}>
                     <div className="nav_lo">
-                            <h1>M</h1>
-                            <div className="menu_inno">
-                                <h4>MAYON</h4>
-                                <h6>INNOVATION & TECHNOLOGY</h6>
-                            </div>
+                        <h1>M</h1>
+                        <div className="menu_inno">
+                            <h4>MAYON</h4>
+                            <h6>INNOVATION & TECHNOLOGY</h6>
                         </div>
+                    </div>
                     <ul className="nav_menu">
                         <li><a href="#home"><i className="bi bi-house"></i> Home</a></li>
                         <li><a href="#service"><i className="bi bi-award"></i> Service</a></li>
@@ -104,21 +104,17 @@ const Nav = () => {
                             <li><a href="#about">About</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <li><a href="#company">Company</a></li>
-                            <h5 className="text-white">{<Grip/>}</h5>
+                            <li className="text-white">{<Grip />}</li>
                         </ul>
                     </div>
                 </nav>
 
                 <main className={Styles.main_page} id="home">
-
                     <div className={Styles.grid_main}>
                         <div className="text-white pt-5 hero-head">
-                            <motion.h3 initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas <br/> Through Tech.</motion.h3>
+                            <motion.h3 initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas <br /> Through Tech.</motion.h3>
                             <p>We design and build apps. websites, and custom tech solutions to turn your to scalable digital products.</p>
                             <button className={Styles.work_with_us} type="button">Work with us <i className="bi bi-arrow-right pt-1 fw-bold"></i>  </button>
-                        </div>
-                        <div className={Styles.heroImgDiv}>
-                            <Image src={hero_image} className={Styles.heroImg} alt="hero image" />
                         </div>
                     </div>
                 </main>
@@ -128,15 +124,15 @@ const Nav = () => {
                             <h3 className="text-white ps-3 pe-3">Our Services</h3>
                         </motion.div>
                         <div className={Styles.grid_service}>
-                            <motion.div ref={ref3} initial={{ opacity: 0, y: 50 }} animate={view3 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
-                                 <h3 className={`${Styles.service_emoji}`}><i className="me-3"><LayoutList /></i></h3>
+                            <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
+                                <h3 className={`${Styles.service_emoji}`}><i className="me-3"><LayoutList /></i></h3>
                                 <div className="ms-2">
                                     <h5>Wireframing & Prototyping</h5>
                                     <p>Clear visual plan before development begins</p>
                                 </div>
                             </motion.div>
 
-                            <motion.div ref={ref4} initial={{ opacity: 0, y: 50 }} animate={view4 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
+                            <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
                                 <h3 className={`${Styles.service_emoji}`}><i className="me-3"><ArrowDownWideNarrow /></i></h3>
                                 <div className="ms-2">
                                     <h5>UI/UX Design</h5>
@@ -144,7 +140,7 @@ const Nav = () => {
                                 </div>
                             </motion.div>
 
-                            <motion.div ref={ref5} initial={{ opacity: 0, y: 50 }} animate={view5 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
+                            <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
                                 <h3 className={Styles.service_emoji}><i className={"me-3"}><MonitorSmartphone /></i></h3>
                                 <div className="ms-2">
                                     <h5>App & Web Development</h5>
@@ -152,8 +148,8 @@ const Nav = () => {
                                 </div>
                             </motion.div>
 
-                            <motion.div ref={ref6} initial={{ opacity: 0, y: 50 }} animate={view6 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
-                                 <h3 className={`${Styles.service_emoji}`}><i className="me-3"><Rocket /></i></h3>
+                            <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
+                                <h3 className={`${Styles.service_emoji}`}><i className="me-3"><Rocket /></i></h3>
                                 <div className="ms-2">
                                     <h5>Launching and maintenance</h5>
                                     <p>Post-launch support to ensure everything runs smoothly</p>
@@ -172,21 +168,25 @@ const Nav = () => {
                     <div className="large-padd">
                         <div className="ps-3 pe-3">
 
-                            <p className="text-white">Mayon Innovation and Technology is a forward thinking digital company dedicated to transforming ideas into impactful technology solutions. We specialize in UI/UX design, web and mobile app development, wireframing and prototyping, product launches, and long-term maintenance, helping businesses and individuals turn their visions into reality.
-Founded with a mission to make technology accessible, scalable, and purposeful, Mayon brings a fresh perspective to the digital space. We’re not just developers or designers, we’re creative problem-solvers who work at the intersection of design, functionality, and innovation. Whether you’re launching a new digital product, improving an existing system, or building from the ground up, our team provides the expertise, agility, and support you need.
-At Mayon, we believe that great technology starts with understanding people. That's why our process begins with deep user research, thoughtful UX design, and strategic planning. We don’t cut corners, we collaborate closely with our clients to ensure every solution we deliver is intuitive, scalable, and visually striking.
-We also understand that launching is just the beginning. That’s why we offer post-launch maintenance, performance optimization, and product updates, so you can stay competitive and relevant in a fast-moving digital world.</p>
+                            <p className="text-white">Mayon Innovation and Technology is a forward thinking digital company dedicated to transforming ideas into impactful technology solutions. We specialize in UI/UX design, web and mobile app development, wireframing and prototyping, product launches, and long-term maintenance, helping businesses and individuals turn their visions into reality. <br />
+                                Founded with a mission to make technology accessible, scalable, and purposeful, Mayon brings a fresh perspective to the digital space. We’re not just developers or designers, we’re creative problem-solvers who work at the intersection of design, functionality, and innovation. Whether you’re launching a new digital product, improving an existing system, or building from the ground up, our team provides the expertise, agility, and support you need.
+                                At Mayon, we believe that great technology starts with understanding people. That's why our process begins with deep user research, thoughtful UX design, and strategic planning. We don’t cut corners, we collaborate closely with our clients to ensure every solution we deliver is intuitive, scalable, and visually striking. <br />
+                                We also understand that launching is just the beginning. That’s why we offer post-launch maintenance, performance optimization, and product updates, so you can stay competitive and relevant in a fast-moving digital world.</p>
                         </div>
 
                         <div className={Styles.happy}>
                             <div>
                                 <motion.h1 ref={ref} initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} className="text-primary">{count} +</motion.h1>
+                                    whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} className="text-primary text-center">{count} +</motion.h1>
                                 <h6 className="text-white">Happy Clients</h6>
+                                <div className={Styles.shadow_blue_client}>
+                                    <span>g</span>
+                                </div>
+                                <div></div>
                             </div>
                             <div>
                                 <motion.h1 ref={ref1} initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} className="text-danger">{count1} +</motion.h1>
+                                    whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} className="text-danger text-center">{count1} +</motion.h1>
                                 <h6 className="text-white">Project delivered</h6>
                             </div>
                         </div>
@@ -242,6 +242,9 @@ We also understand that launching is just the beginning. That’s why we offer p
 
                     <div className={Styles.work_container}>
                         <div className={Styles.work_border}>
+                            <div className={Styles.shadow_blue}>
+                                <span></span>
+                            </div>
                             <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
                                 <h4 className="text-center">Easy Travel</h4>
                                 <p className="text-center">EASY TRAVEL is a simple and user-friendly traveling website for exploring destination and booking with ease</p>
@@ -262,6 +265,9 @@ We also understand that launching is just the beginning. That’s why we offer p
                             </motion.div>
                         </div>
                         <div className={Styles.work_border}>
+                            <div className={Styles.shadow_blue_music}>
+                                <span></span>
+                            </div>
                             <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
                                 <h4 className="text-center">Music Play</h4>
                                 <p className="text-center">MUSIC PLAY is a sleek music app build to let user easily play, organize and enjoy their favorite song anytime, it features a clean interface,
@@ -308,7 +314,11 @@ We also understand that launching is just the beginning. That’s why we offer p
 
             <div className="bg-dark text-white pt-4 ps-3 pe-3 pb-3" id="contact">
                 <div className="large-padd pt-5 pb-5">
+
                     <div className={Styles.grid_question}>
+                        <div className={Styles.shadow_blue_question}>
+                            <span></span>
+                        </div>
                         <div>
                             <motion.h2 ref={ref22} initial={{ opacity: 0, y: 50 }} animate={view22 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className="text-primary pb-4">Have Questions? Reach Out</motion.h2>
                             <p>We will love to hear from you. Fill out the form and we will get back to you soon.</p>
@@ -331,7 +341,7 @@ We also understand that launching is just the beginning. That’s why we offer p
                                 <label htmlFor="email">Email Address</label> <br />
                                 <input type="email" id="email" placeholder="Enter Email Address" /> <br />
                                 <label htmlFor="topic">Your Topic</label> <br />
-                                 <input type="email" id="email" placeholder="Enter Your Topic" /> <br />
+                                <input type="email" id="email" placeholder="Enter Your Topic" /> <br />
                                 <button type="button" className="btn btn-primary">Send Message</button>
                             </form>
                         </div>
@@ -363,7 +373,7 @@ We also understand that launching is just the beginning. That’s why we offer p
                         </div>
                         <div>
                             <h5>Contact</h5>
-                            <p>Reach to us easily</p>
+                            <p>Reach out to us easily</p>
                             <p>Mayoninnovation@gmail.com</p>
                             <p>+234 810 340 0258</p>
                         </div>

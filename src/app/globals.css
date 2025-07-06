@@ -103,8 +103,8 @@ nav {
     align-items: center;
     padding-right: 15px;
 }
-.hero-head {
-  width: 50%;
+.hero-head p {
+  max-width: 60%;
 }
 }
 
@@ -125,6 +125,8 @@ nav {
     display: flex;
     list-style: none;
     padding-right: 30px;
+    align-items: center;
+    padding-top: 10px;
    
   }
   .large_menu li a {
