@@ -172,11 +172,11 @@
 }
 .insta_white {
   background-color: #fff;
-  width: 31px;
-  height: 31px;
+  width: 29px;
+  height: 29px;
   border-radius: 50%;
   position: absolute;
-  margin-top: 4px;
+  margin-top: 2px;
   margin-left: -2px;
 }
 .form {
