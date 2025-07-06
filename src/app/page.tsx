@@ -326,7 +326,7 @@ const Nav = () => {
                                 </div>
                                 <div className="d-flex">
                                     <span className={Styles.insta_white}></span>
-                                    <i className="bi bi-instagram z-1 instagram text-black pe-4"></i>
+                                    <i className="bi bi-instagram z-1 instagram text-black pe-3"></i>
                                     <i className="bi bi-facebook pe-3 fs-3"></i>
                                     <i className="bi bi-telegram fs-3"></i>
                                 </div>
