@@ -168,6 +168,15 @@
 .meet:hover {
   background-color: blue;
 }
+.insta_white {
+  background-color: #fff;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: -2px;
+}
 .form {
   padding-top: 25px;
 }
@@ -212,7 +221,7 @@
 }
 .mayon_w {
   color: #0d6efd;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .innovation {
 position: absolute;

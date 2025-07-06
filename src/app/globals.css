@@ -58,6 +58,11 @@ nav {
 .relative {
   position: relative;
 }
+.instagram {
+  font-size: 20px;
+  padding-top: 4px;
+  padding-left: 3px;
+}
 
 @media (max-width: 750px) {
 .nav-flex {
