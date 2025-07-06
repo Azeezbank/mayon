@@ -1,13 +1,6 @@
-.stock {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: fixed;
-  z-index: -5
-}
 .main_page {
   padding: 0px 15px 15px 15px;
-  background-color: transparent;
+  background-color: #000;
   height: 700px;
   display: flex;
   align-items: center;
@@ -18,17 +11,19 @@
   border-radius: 8px;
   color: #fff;
   padding: 8px 8px;
+  display: flex;
+  align-items: center;
+  font-weight: bo;
+}
+.work_with_us i {
+  padding-left: 5px;
+  
 }
 
 .heroImgDiv {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.heroImg {
-  width: 250px;
-  height: 200px;
-  margin-top: 60px;
 }
 .servicesDiv {
   display: flex;
@@ -102,10 +97,8 @@
   padding-top: 80px;
 }
 .more_about h4 {
-  border: 2px solid #0d6efd;
   padding: 20px;
   border-radius: 7px;
-  background-color: #2e2e2e;
 }
 .discovery {
   color: #fff;
@@ -180,7 +173,7 @@
   color: #fff;
   outline: none;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 1px;
 }
 .textarea {
   padding: 10px 15px;
@@ -203,7 +196,6 @@
 }
 .mayon_f_logo {
   display: flex;
-  align-items: center;
 }
 .mayon_m {
   color: #0d6efd;
@@ -263,6 +255,11 @@ padding: 0px 60px
   display: grid;
   grid-template-columns: 100%;
   gap: 20px;
+}
+.heroImg {
+  margin-top: 15px;
+  width: 50%;
+  height: 50%;
 }
 }
 
@@ -329,4 +326,9 @@ padding: 0px 60px
   .work_with_us {
     margin-top: 20px;
   }
+  .heroImg {
+  width: 100%;
+  height: 70%;
+  margin-top: 60px;
+}
 }

@@ -2,9 +2,8 @@
 import React, { useState, useEffect } from "react";
 import mayon from '../../public/mayon.png';
 import Image from 'next/image';
-import { Menu, X, ArrowDownWideNarrow, MonitorSmartphone } from 'lucide-react';
+import { Grip, X, ArrowDownWideNarrow, MonitorSmartphone, Rocket, LayoutList } from 'lucide-react';
 import Styles from './page.module.css';
-import Marquee from "react-fast-marquee";
 import gateway from '../../public/gateway.png';
 import welcome from '../../public/two-phones.png';
 import global from '../../public/global.png';
@@ -69,9 +68,13 @@ const Nav = () => {
         <>
             <div className="home-page">
                 <aside className={`aside ${isNav ? 'nav-visible' : 'nav-hidden'}`}>
-                    <div className="d-flex justify-content-center">
-                        <Image src={mayon} alt="logo" className="nav_visibleLogo" />
-                    </div>
+                    <div className="nav_lo">
+                            <h1>M</h1>
+                            <div className="menu_inno">
+                                <h4>MAYON</h4>
+                                <h6>INNOVATION & TECHNOLOGY</h6>
+                            </div>
+                        </div>
                     <ul className="nav_menu">
                         <li><a href="#home"><i className="bi bi-house"></i> Home</a></li>
                         <li><a href="#service"><i className="bi bi-award"></i> Service</a></li>
@@ -83,10 +86,16 @@ const Nav = () => {
 
                 <nav>
                     <div className="nav-flex">
-                        <Image src={mayon} alt="Mayon" className='nav_logo' />
+                        <div className="nav_lo">
+                            <h1>M</h1>
+                            <div className="menu_inno">
+                                <h4>MAYON</h4>
+                                <h6>INNOVATION & TECHNOLOGY</h6>
+                            </div>
+                        </div>
                         <div className="hamburger">
                             <button type={"button"} className='nav-btn' onClick={() => setIsnav(!isNav)}>
-                                {isNav ? <X /> : <Menu />}
+                                {isNav ? <X /> : <Grip />}
                             </button>
                         </div>
 
@@ -96,20 +105,18 @@ const Nav = () => {
                             <li><a href="#about">About</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <li><a href="#company">Company</a></li>
+                            <h5 className="text-white">{<Grip/>}</h5>
                         </ul>
                     </div>
                 </nav>
-                <video autoPlay loop muted playsInline className={Styles.stock}>
-                    <source src="stockk.mp4" type="video/mp4" />
-                </video>
 
                 <main className={Styles.main_page} id="home">
 
                     <div className={Styles.grid_main}>
                         <div className="text-white pt-5 hero-head">
-                            <motion.h3 initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas Through Tech.</motion.h3>
+                            <motion.h3 initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas <br/> Through Tech.</motion.h3>
                             <p>We design and build apps. websites, and custom tech solutions to turn your to scalable digital products.</p>
-                            <button className={Styles.work_with_us} type="button">Work with us <i className="bi bi-arrow-right"></i>  </button>
+                            <button className={Styles.work_with_us} type="button">Work with us <i className="bi bi-arrow-right pt-1 fw-bold"></i>  </button>
                         </div>
                         <div className={Styles.heroImgDiv}>
                             <Image src={hero_image} className={Styles.heroImg} alt="hero image" />
@@ -119,13 +126,11 @@ const Nav = () => {
                 <div className="bg-black pb-5 ps-3 pe-3 pt-5" id="service">
                     <div className="large-padd">
                         <motion.div ref={ref2} initial={{ opacity: 0, y: 50 }} animate={view2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.servicesDiv}>
-                            <span></span>
                             <h3 className="text-white ps-3 pe-3">Our Services</h3>
-                            <span></span>
                         </motion.div>
                         <div className={Styles.grid_service}>
                             <motion.div ref={ref3} initial={{ opacity: 0, y: 50 }} animate={view3 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
-                                <h3 className={Styles.service_emoji}><i className={"bi bi-ui-checks me-3"}></i></h3>
+                                 <h3 className={`${Styles.service_emoji}`}><i className="me-3"><LayoutList /></i></h3>
                                 <div className="ms-2">
                                     <h5>Wireframing & Prototyping</h5>
                                     <p>Clear visual plan before development begins</p>
@@ -133,7 +138,7 @@ const Nav = () => {
                             </motion.div>
 
                             <motion.div ref={ref4} initial={{ opacity: 0, y: 50 }} animate={view4 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
-                                <h3 className={Styles.service_emoji}><i className="me-3"><ArrowDownWideNarrow /></i></h3>
+                                <h3 className={`${Styles.service_emoji}`}><i className="me-3"><ArrowDownWideNarrow /></i></h3>
                                 <div className="ms-2">
                                     <h5>UI/UX Design</h5>
                                     <p>Beautiful, intuitive designs built for real users.</p>
@@ -149,7 +154,7 @@ const Nav = () => {
                             </motion.div>
 
                             <motion.div ref={ref6} initial={{ opacity: 0, y: 50 }} animate={view6 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
-                                <h3 className={Styles.service_emoji}><i className={"bi bi-rocket-takeoff me-3"}></i></h3>
+                                 <h3 className={`${Styles.service_emoji}`}><i className="me-3"><Rocket /></i></h3>
                                 <div className="ms-2">
                                     <h5>Launching and maintenance</h5>
                                     <p>Post-launch support to ensure everything runs smoothly</p>
@@ -161,9 +166,7 @@ const Nav = () => {
 
                 <div className="bg-black">
                     <h2 className={Styles.about_sp}>
-                        <span></span>
                         <h3>ABOUT US</h3>
-                        <span></span>
 
                     </h2>
 
@@ -196,7 +199,7 @@ const Nav = () => {
             </div>
             <div className="bg-black pe-3 ps-3 relative" id="about">
                 <div className={Styles.more_about}>
-                    <motion.h4 ref={ref10} initial={{ opacity: 0, y: 50 }} animate={view10 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} >More About us</motion.h4>
+                    <motion.h2 ref={ref10} initial={{ opacity: 0, y: 50 }} animate={view10 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} >More About us</motion.h2>
                 </div>
 
                 <motion.p initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className="text-white text-center pb-3">We followed structured, human-centered approach to ensure every product we build is functional, user friendly and impactful.</motion.p>
@@ -238,9 +241,7 @@ const Nav = () => {
             <div className="bg-black pe-3 ps-3 pt-5" id="company">
                 <div className="large-padd pt-4">
                     <motion.div ref={ref20} initial={{ opacity: 0, y: -50 }} animate={view20 ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.servicesDiv}>
-                        <span></span>
                         <h2 className="text-white ps-3 pe-3">Our Work</h2>
-                        <span></span>
                     </motion.div>
 
                     <div className={Styles.work_container}>
@@ -295,7 +296,7 @@ const Nav = () => {
                     <div className={Styles.grid_passport}>
                         <div>
                             <h2 className="text-primary">Saliu Johnson</h2>
-                            <h5 className="text-white">CEO & Founder, Mayon Innovation and Technology</h5>
+                            <p className="text-white">CEO & Founder, Mayon Innovation and Technology </p>
                             <p className="text-white">As the founder and CEO of Mayon innovation and technology, I am driving by passion for transforming bold ideas into meaningful digital solution. At Mayon, we did not just build products,
                                 we focus on innovation, simplicity and scalability. Our mission is clear: to help bussinesses grow by delivering fast, reliable and user-focusedtech solution that truly work. Whether it is through design, develpment
                                 or ongoing support, we are here to turn vission into value, one project at a time.
@@ -324,7 +325,7 @@ const Nav = () => {
                                 <p>Mayoninnovation@gmail.com</p>
                             </div>
                             <div className="d-flex">
-                                <i className="bi bi-instagram pe-3 fs-3"></i>
+                                <i className="bi bi-instagram pe-3 fs-3 instagram"></i>
                                 <i className="bi bi-facebook pe-3 fs-3"></i>
                                 <i className="bi bi-telegram fs-3"></i>
                             </div>
@@ -334,7 +335,7 @@ const Nav = () => {
                                 <label htmlFor="email">Email Address</label> <br />
                                 <input type="email" id="email" placeholder="Enter Email Address" /> <br />
                                 <label htmlFor="topic">Your Topic</label> <br />
-                                <textarea className={Styles.textarea} placeholder="Enter Your Message" rows={5}></textarea> <br />
+                                 <input type="email" id="email" placeholder="Enter Your Topic" /> <br />
                                 <button type="button" className="btn btn-primary">Send Message</button>
                             </form>
                         </div>
