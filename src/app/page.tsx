@@ -172,13 +172,10 @@ const Nav = () => {
                     <div className="large-padd">
                         <div className="ps-3 pe-3">
 
-                            <p className="text-white"> Mayon innobvation and technology is a forward thinking digital company dedicated to transforming
-                                ideas into impactful technology solutions. We specialize in UI/UX design, web and mobile app development, wireframing and prototyping,
-                                product launches, and long-term maintenance, helping bussinesses and individuals turn their visions into reality. We are founded with a mission to make technology accessible, scalable and purposeful, Mayon brings a fresh perspectfull to the digital space.
-                                We are not just developer or designers, we are creative problem-solvers who work at the intersection of design, functionality and innovation. whether
-                                you are launching a new digital product, improving an existing system, or building from the ground up, our team provides the expertise, agility and support you need. At Mayonm we believe that great technology start with understanding people. That is why our process begins with deep user reserch, thoughtfull UX design, and strategic planning. we dont cut corners, we
-                                colaborate closelywith our client to ensure every solution we deliver is intuitive, scalable and visually striking.
-                                We also understand that launching is just the begining . That is why we offer post lkaunch maintenance, perfomance optimization, and product updates, so you can stay competitive and relevant in the fast-moving digital world.</p>
+                            <p className="text-white">Mayon Innovation and Technology is a forward thinking digital company dedicated to transforming ideas into impactful technology solutions. We specialize in UI/UX design, web and mobile app development, wireframing and prototyping, product launches, and long-term maintenance, helping businesses and individuals turn their visions into reality.
+Founded with a mission to make technology accessible, scalable, and purposeful, Mayon brings a fresh perspective to the digital space. We’re not just developers or designers, we’re creative problem-solvers who work at the intersection of design, functionality, and innovation. Whether you’re launching a new digital product, improving an existing system, or building from the ground up, our team provides the expertise, agility, and support you need.
+At Mayon, we believe that great technology starts with understanding people. That's why our process begins with deep user research, thoughtful UX design, and strategic planning. We don’t cut corners, we collaborate closely with our clients to ensure every solution we deliver is intuitive, scalable, and visually striking.
+We also understand that launching is just the beginning. That’s why we offer post-launch maintenance, performance optimization, and product updates, so you can stay competitive and relevant in a fast-moving digital world.</p>
                         </div>
 
                         <div className={Styles.happy}>
