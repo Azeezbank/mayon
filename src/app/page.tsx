@@ -7,7 +7,6 @@ import gateway from '../../public/gateway.png';
 import welcome from '../../public/two-phones.png';
 import global from '../../public/global.png';
 import cripto from '../../public/cripto.png';
-import hero_image from '../../public/mayon-bg.jpg';
 import papii from '../../public/papii.jpg';
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
@@ -16,10 +15,6 @@ import { motion } from "framer-motion";
 const Nav = () => {
     const [isNav, setIsnav] = useState(false);
     const [ref2, view2] = useInView({ threshold: 1, triggerOnce: false });
-    const [ref3, view3] = useInView({ threshold: 1, triggerOnce: false });
-    const [ref4, view4] = useInView({ threshold: 1, triggerOnce: false });
-    const [ref5, view5] = useInView({ threshold: 1, triggerOnce: false });
-    const [ref6, view6] = useInView({ threshold: 1, triggerOnce: false });
     const [ref10, view10] = useInView({ threshold: 1, triggerOnce: true });
     const [ref20, view20] = useInView({ threshold: 1, triggerOnce: false });
     const [ref21, view21] = useInView({ threshold: 1, triggerOnce: false });
