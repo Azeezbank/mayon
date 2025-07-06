@@ -30,7 +30,7 @@ const Nav = () => {
     const [count, setCount] = useState(0);
     const [count1, setCount1] = useState(0);
     const { ref, inView } = useInView({ threshold: 1 });
-    const [ref1, view1] = useInView({ threshold: 1});
+    const [ref1, view1] = useInView({ threshold: 1 });
 
     useEffect(() => {
         if (inView) {
@@ -64,7 +64,7 @@ const Nav = () => {
                 });
             }, stepTime);
         }
-    }, [view1]);   
+    }, [view1]);
     return (
         <>
             <div className="home-page">
@@ -126,7 +126,7 @@ const Nav = () => {
                         <div className={Styles.grid_service}>
                             <motion.div ref={ref3} initial={{ opacity: 0, y: 50 }} animate={view3 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
                                 <h3 className={Styles.service_emoji}><i className={"bi bi-ui-checks me-3"}></i></h3>
-                                <div  className="ms-2">
+                                <div className="ms-2">
                                     <h5>Wireframing & Prototyping</h5>
                                     <p>Clear visual plan before development begins</p>
                                 </div>
@@ -142,7 +142,7 @@ const Nav = () => {
 
                             <motion.div ref={ref5} initial={{ opacity: 0, y: 50 }} animate={view5 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
                                 <h3 className={Styles.service_emoji}><i className={"me-3"}><MonitorSmartphone /></i></h3>
-                                <div  className="ms-2">
+                                <div className="ms-2">
                                     <h5>App & Web Development</h5>
                                     <p>secure-responsive and scalable buils for all platforms.</p>
                                 </div>
@@ -150,7 +150,7 @@ const Nav = () => {
 
                             <motion.div ref={ref6} initial={{ opacity: 0, y: 50 }} animate={view6 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
                                 <h3 className={Styles.service_emoji}><i className={"bi bi-rocket-takeoff me-3"}></i></h3>
-                                <div  className="ms-2">
+                                <div className="ms-2">
                                     <h5>Launching and maintenance</h5>
                                     <p>Post-launch support to ensure everything runs smoothly</p>
                                 </div>
@@ -160,39 +160,23 @@ const Nav = () => {
                 </div>
 
                 <div className="bg-black">
-                    <Marquee>
-                        <h2 className="pt-3 pb-3 ">
-                            <span className={Styles.about_text}>ABOUT US</span>
-                            <span className="text-primary ps-4 pe-4">ABOUT US</span>
-                            <span className={Styles.about_text}>ABOUT US</span>
-                            <span className="text-primary ps-4 pe-4">ABOUT US</span>
-                            <span className={Styles.about_text}>ABOUT US</span>
-                            <span className="text-primary ps-4 pe-4">ABOUT US</span>
-                            <span className={Styles.about_text}>ABOUT US</span>
-                            <span className="text-primary ps-4 pe-4">ABOUT US</span>
-                            <span className={Styles.about_text}>ABOUT US</span>
-                            <span className="text-primary ps-4 pe-4">ABOUT US</span>
-                        </h2>
-                    </Marquee>
+                    <h2 className={Styles.about_sp}>
+                        <span></span>
+                        <h3>ABOUT US</h3>
+                        <span></span>
+
+                    </h2>
 
                     <div className="large-padd">
                         <div className="ps-3 pe-3">
-                            <div className={Styles.grid_about}>
-                                <motion.p initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.aboutCont}>Mayon innobvation and technology is a forward thinking digital company dedicated to transforming
-                                    ideas into impactful technology solutions. We specialize in UI/UX design, web and mobile app development, wireframing and prototyping,
-                                    product launches, and long-term maintenance, helping bussinesses and individuals turn their visions into reality.
-                                </motion.p>
-                                <motion.p initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.aboutCont}>We are founded with a mission to make technology accessible, scalable and purposeful, Mayon brings a fresh perspectfull to the digital space.
-                                    We are not just developer or designers, we are creative problem-solvers who work at the intersection of design, functionality and innovation. whether
-                                    you are launching a new digital product, improving an existing system, or building from the ground up, our team provides the expertise, agility and support you need.
-                                </motion.p>
-                            </div>
-                            <div className="mt-3 d-flex justify-content-center">
-                                <motion.p initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 1, ease: "easeIn" }} className={`${Styles.aboutCont} ${Styles.aboutCont_third}`}>At Mayonm we believe that great technology start with understanding people. That is why our process begins with deep user reserch, thoughtfull UX design, and strategic planning. we dont cut corners, we
-                                    colaborate closelywith our client to ensure every solution we deliver is intuitive, scalable and visually striking.
-                                    We also understand that launching is just the begining . That is why we offer post lkaunch maintenance, perfomance optimization, and product updates, so you can stay competitive and relevant in the fast-moving digital world.
-                                </motion.p>
-                            </div>
+
+                            <p className="text-white"> Mayon innobvation and technology is a forward thinking digital company dedicated to transforming
+                                ideas into impactful technology solutions. We specialize in UI/UX design, web and mobile app development, wireframing and prototyping,
+                                product launches, and long-term maintenance, helping bussinesses and individuals turn their visions into reality. We are founded with a mission to make technology accessible, scalable and purposeful, Mayon brings a fresh perspectfull to the digital space.
+                                We are not just developer or designers, we are creative problem-solvers who work at the intersection of design, functionality and innovation. whether
+                                you are launching a new digital product, improving an existing system, or building from the ground up, our team provides the expertise, agility and support you need. At Mayonm we believe that great technology start with understanding people. That is why our process begins with deep user reserch, thoughtfull UX design, and strategic planning. we dont cut corners, we
+                                colaborate closelywith our client to ensure every solution we deliver is intuitive, scalable and visually striking.
+                                We also understand that launching is just the begining . That is why we offer post lkaunch maintenance, perfomance optimization, and product updates, so you can stay competitive and relevant in the fast-moving digital world.</p>
                         </div>
 
                         <div className={Styles.happy}>
@@ -350,7 +334,7 @@ const Nav = () => {
                                 <label htmlFor="email">Email Address</label> <br />
                                 <input type="email" id="email" placeholder="Enter Email Address" /> <br />
                                 <label htmlFor="topic">Your Topic</label> <br />
-                                <textarea className={Styles.textarea} placeholder="Enter Your Message" rows={5}></textarea> <br/>
+                                <textarea className={Styles.textarea} placeholder="Enter Your Message" rows={5}></textarea> <br />
                                 <button type="button" className="btn btn-primary">Send Message</button>
                             </form>
                         </div>

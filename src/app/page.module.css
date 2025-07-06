@@ -75,6 +75,21 @@
   border-bottom-left-radius: 70px;
   border-top-right-radius: 70px;
 }
+.about_sp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_sp span {
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+}
+.about_sp h3 {
+  color: #fff;
+  padding: 0px 5px;
+  text-align: center;
+}
 .happy {
   display: flex;
   justify-content: space-around;
