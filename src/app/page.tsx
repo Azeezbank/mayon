@@ -373,7 +373,7 @@ const Nav = () => {
                         </div>
                         
                     </footer>
-                    <p className="pt-4 text-white">Copyright@2025 Mayon. All Right Reserved.</p>
+                    <p className="pt-4 text-light">Copyright@2025 Mayon. All Right Reserved.</p>
                 </div>
             </div>
         </>
