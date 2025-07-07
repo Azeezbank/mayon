@@ -58,10 +58,23 @@ nav {
 .relative {
   position: relative;
 }
-.instagram {
-  font-size: 20px;
-  padding-top: 4px;
-  padding-left: 3px;
+/* .instagram {
+  font-size: 19px;
+  padding-top: 9px;
+  padding-left: 3px; */
+/* } */
+.insta-div {
+  display: flex;
+  align-items: center;
+}
+.insta-bg {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 750px) {

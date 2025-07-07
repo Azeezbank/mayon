@@ -169,15 +169,6 @@
 .meet:hover {
   background-color: blue;
 }
-.insta_white {
-  background-color: #fff;
-  width: 31px;
-  height: 31px;
-  border-radius: 50%;
-  position: absolute;
-  margin-top: 4px;
-  margin-left: -2px;
-}
 .form {
   padding-top: 25px;
 }
@@ -225,13 +216,12 @@
   letter-spacing: 1px;
   padding-top: 2px;
   font-weight: bold;
-  width: 90px;
 }
 .innovation {
   margin-top: -10px;
   font-size: 6px;
   font-weight: bold;
-  width: 90px;
+  letter-spacing: -0.1px;
 }
 .shadow_blue {
   display: flex;
@@ -406,7 +396,7 @@
   margin-top: -10px;
   font-size: 6px;
   font-weight: bold;
-  width: 90px;
   margin-left: 2px;
+  letter-spacing: 0.2px;
 }
 }

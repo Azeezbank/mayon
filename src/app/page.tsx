@@ -323,10 +323,9 @@ const Nav = () => {
                                     <i className="bi bi-envelope pe-2 text-primary"></i>
                                     <p>Mayoninnovation@gmail.com</p>
                                 </div>
-                                <div className="d-flex">
-                                    <span className={Styles.insta_white}></span>
-                                    <i className="bi bi-instagram z-1 instagram text-black pe-4"></i>
-                                    <i className="bi bi-facebook pe-3 fs-3"></i>
+                                <div className="d-flex insta-div">
+                                    <div className="insta-bg"><i className="bi bi-instagram text-black"></i></div>
+                                    <i className="bi bi-facebook pe-3 ps-3 fs-3"></i>
                                     <i className="bi bi-telegram fs-3"></i>
                                 </div>
                             </div>
