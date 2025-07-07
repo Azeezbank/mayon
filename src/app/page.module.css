@@ -223,64 +223,6 @@
   font-weight: bold;
   letter-spacing: -0.1px;
 }
-.shadow_blue {
-  display: flex;
-  position: absolute;
-}
-.shadow_blue span {
-  height: 40px;
-  width: 40px;
-  background-color: rgba(13, 110, 253, 0.2);
-  box-shadow: 0 0 50px #0d6efd;
-  position: absolute;
-  top: 20px;
-  border-radius: 50%;
-}
-.shadow_blue_music {
-  display: flex;
-  position: absolute;
-
-}
-.shadow_blue_music span {
-  height: 40px;
-  width: 40px;
-  background-color: rgba(13, 110, 253, 0.2);
-  box-shadow: 0 0 50px #0d6efd;
-  position: absolute;
-  top: 20px;
-  border-radius: 50%;
-  z-index: 3;
-}
-.shadow_blue_question {
-  display: flex;
-  position: absolute;
-
-}
-.shadow_blue_question span {
-  height: 40px;
-  width: 40px;
-  background-color: rgba(13, 110, 253, 0.2);
-  box-shadow: 0 0 50px #0d6efd;
-  position: absolute;
-  top: 20px;
-  border-radius: 50%;
-  z-index: 3;
-}
-.shadow_blue_client {
-  display: flex;
-  position: absolute;
-}
-.shadow_blue_client span {
-  height: 40px;
-  width: 40px;
-  background-color: rgba(13, 110, 253, 0.2);
-  box-shadow: 0 0 50px #0d6efd;
-  position: absolute;
-  top: 20px;
-  left: 50px;
-  border-radius: 50%;
-  z-index: 2;
-}
 
 @media (max-width: 750px) {
   .grid_service {

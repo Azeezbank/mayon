@@ -172,10 +172,10 @@ const Nav = () => {
                                     <motion.h1 ref={ref} initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} className="text-primary text-center">{count} +</motion.h1>
                                     <h6 className="text-white">Happy Clients</h6>
-                                    <div className={Styles.shadow_blue_client}>
+                                    {/* <div className={Styles.shadow_blue_client}>
                                         <span></span>
-                                    </div>
-                                    <div></div>
+                                    </div> */}
+                                    {/* <div></div> */}
                                 </div>
                                 <div>
                                     <motion.h1 ref={ref1} initial={{ opacity: 0 }}
@@ -235,9 +235,9 @@ const Nav = () => {
 
                         <div className={Styles.work_container}>
                             <div className={Styles.work_border}>
-                                <div className={Styles.shadow_blue}>
+                                {/* <div className={Styles.shadow_blue}>
                                     <span></span>
-                                </div>
+                                </div> */}
                                 <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
                                     <h4 className="text-center">Easy Travel</h4>
                                     <p className="text-center">EASY TRAVEL is a simple and user-friendly traveling website for exploring destination and booking with ease</p>
@@ -258,9 +258,9 @@ const Nav = () => {
                                 </motion.div>
                             </div>
                             <div className={Styles.work_border}>
-                                <div className={Styles.shadow_blue_music}>
+                                {/* <div className={Styles.shadow_blue_music}>
                                     <span></span>
-                                </div>
+                                </div> */}
                                 <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
                                     <h4 className="text-center">Music Play</h4>
                                     <p className="text-center">MUSIC PLAY is a sleek music app build to let user easily play, organize and enjoy their favorite song anytime, it features a clean interface,
@@ -309,9 +309,9 @@ const Nav = () => {
                         {/* <div className="large-padd pt-5 pb-5"> */}
 
                         <div className={Styles.grid_question}>
-                            <div className={Styles.shadow_blue_question}>
+                            {/* <div className={Styles.shadow_blue_question}>
                                 <span></span>
-                            </div>
+                            </div> */}
                             <div>
                                 <motion.h2 ref={ref22} initial={{ opacity: 0, y: 50 }} animate={view22 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className="text-primary pb-4">Have Questions? Reach Out</motion.h2>
                                 <p>We will love to hear from you. Fill out the form and we will get back to you soon.</p>
