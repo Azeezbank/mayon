@@ -14,7 +14,6 @@ import { motion } from "framer-motion";
 
 const Nav = () => {
     const [isNav, setIsnav] = useState(false);
-    const [ref2, view2] = useInView({ threshold: 1, triggerOnce: false });
     const [ref10, view10] = useInView({ threshold: 1, triggerOnce: true });
     const [ref20, view20] = useInView({ threshold: 1, triggerOnce: false });
     const [ref21, view21] = useInView({ threshold: 1, triggerOnce: false });
@@ -99,7 +98,7 @@ const Nav = () => {
                             <li><a href="#about">About</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <li><a href="#company">Company</a></li>
-                            <li className="text-white">{<Grip />}</li>
+                            <li className="text-white ps-2">{<Grip />}</li>
                         </ul>
                     </div>
                 </nav>
@@ -115,7 +114,7 @@ const Nav = () => {
                                 </div>
                             </div>
                         </main>
-                        <motion.div ref={ref2} initial={{ opacity: 0, y: 50 }} animate={view2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.servicesDiv}>
+                        <motion.div className={Styles.servicesDiv}>
                             <h3 className="text-white ps-3 pe-3">Our Services</h3>
                         </motion.div>
                         <div className={Styles.grid_service}>
@@ -347,10 +346,10 @@ const Nav = () => {
                         {/* <div className="large-padd"> */}
                         <div className={Styles.grid_footer}>
                             <h4 className={Styles.mayon_f_logo}>
-                                <span className={Styles.mayon_m}>M</span>
+                                <h1 className={Styles.mayon_m}>M</h1>
                                 <div className={Styles.Tech}>
-                                    <p className={Styles.mayon_w}>MAYON</p>
-                                    <span className={Styles.innovation}>INNOVATION & TECHNOLOGY</span>
+                                    <h4 className={Styles.mayon_w}>MAYON</h4>
+                                    <h6 className={Styles.innovation}>INNOVATION & TECHNOLOGY</h6>
                                 </div>
                             </h4>
                             <div>

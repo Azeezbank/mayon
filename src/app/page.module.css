@@ -1,13 +1,12 @@
 .main_page {
   background-color: #000;
-  height: 700px;
+  height: 500px;
   display: flex;
   align-items: center;
   background-image: url('/mayon-bg.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  justify-content: center;
 }
 .work_with_us {
   background-color: #0d6efd;
@@ -214,23 +213,25 @@
 }
 .mayon_m {
   color: #0d6efd;
-  font-size: 35px;
-  padding-right: 5px;
+  font-size: 32px;
+  padding-right: 3px;
+  font-weight: bold;
 }
 .Tech {
-  position: relative;
-  padding-top: 4px;
+  text-align: justify;
 }
 .mayon_w {
   color: #0d6efd;
-  letter-spacing: 1.3px;
-  width: 100px;
+  letter-spacing: 1px;
+  padding-top: 2px;
+  font-weight: bold;
+  width: 90px;
 }
 .innovation {
-position: absolute;
-top: 30px;
-  font-size: 5.9px;
-  text-align: center;
+  margin-top: -10px;
+  font-size: 6px;
+  font-weight: bold;
+  width: 90px;
 }
 .shadow_blue {
   display: flex;
@@ -336,14 +337,6 @@ top: 30px;
 }
 
 @media (min-width: 750px) {
-  .main_page {
-    padding: 0px 10%;
-  }
-  .grid_main {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 20px
-  }
   .grid_service {
     color: #fff;
     display: grid;
@@ -402,5 +395,18 @@ top: 30px;
   width: 100%;
   height: 70%;
   margin-top: 60px;
+}
+.mayon_w {
+  color: #0d6efd;
+  padding-top: 2px;
+  font-weight: bold;
+  width: 90px;
+}
+.innovation {
+  margin-top: -10px;
+  font-size: 6px;
+  font-weight: bold;
+  width: 90px;
+  margin-left: 2px;
 }
 }
