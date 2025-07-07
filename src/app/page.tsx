@@ -103,7 +103,7 @@ const Nav = () => {
                     </div>
                 </nav>
 
-                <div className="bg-black pb-5 ps-2 pe-2" id="service">
+                <div className="bg-black ps-2 pe-2" id="service">
                     <div className="large-padd">
                         <main className={Styles.main_page} id="home">
                             <div className={Styles.grid_main}>
@@ -292,7 +292,7 @@ const Nav = () => {
                             <div>
                                 <h2 className="text-primary">Saliu Johnson</h2>
                                 <p className="text-white fw-bold">CEO & Founder, Mayon Innovation and Technology </p>
-                                <p className="text-white">As the founder and CEO of Mayon innovation and technology, I am driving by passion for transforming bold ideas into meaningful digital solution. At Mayon, we did not just build products,
+                                <p className="text-white helmOfMayour">As the founder and CEO of Mayon innovation and technology, I am driving by passion for transforming bold ideas into meaningful digital solution. At Mayon, we did not just build products,
                                     we focus on innovation, simplicity and scalability. Our mission is clear: to help bussinesses grow by delivering fast, reliable and user-focusedtech solution that truly work. Whether it is through design, develpment
                                     or ongoing support, we are here to turn vission into value, one project at a time.
                                 </p>
@@ -371,7 +371,7 @@ const Nav = () => {
                                 <p>+234 810 340 0258</p>
                             </div>
                         </div>
-                        {/* </div> */}
+                        <p className="pt-4">Copyright@2025 Mayon. All Right Reserved.</p>
                     </footer>
                 </div>
             </div>
