@@ -291,7 +291,7 @@ const Nav = () => {
                         <div className={Styles.grid_passport}>
                             <div>
                                 <h2 className="text-primary">Saliu Johnson</h2>
-                                <p className="text-white">CEO & Founder, Mayon Innovation and Technology </p>
+                                <p className="text-white fw-bold">CEO & Founder, Mayon Innovation and Technology </p>
                                 <p className="text-white">As the founder and CEO of Mayon innovation and technology, I am driving by passion for transforming bold ideas into meaningful digital solution. At Mayon, we did not just build products,
                                     we focus on innovation, simplicity and scalability. Our mission is clear: to help bussinesses grow by delivering fast, reliable and user-focusedtech solution that truly work. Whether it is through design, develpment
                                     or ongoing support, we are here to turn vission into value, one project at a time.
