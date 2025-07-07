@@ -108,47 +108,47 @@ const Nav = () => {
                         <main className={Styles.main_page} id="home">
                             <div className={Styles.grid_main}>
                                 <div className="text-white hero-head pt-5">
-                                    <motion.h3 initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }}>Powering Ideas <br /> Through Tech.</motion.h3>
+                                    <h3>Powering Ideas <br /> Through Tech.</h3>
                                     <p>We design and build apps. websites, and custom tech solutions to turn your to scalable digital products.</p>
                                     <button className={Styles.work_with_us} type="button">Work with us <i className="bi bi-arrow-right pt-1 fw-bold"></i>  </button>
                                 </div>
                             </div>
                         </main>
-                        <motion.div className={Styles.servicesDiv}>
+                        <div className={Styles.servicesDiv}>
                             <h3 className="text-white ps-3 pe-3">Our Services</h3>
-                        </motion.div>
+                        </div>
                         <div className={Styles.grid_service}>
-                            <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
+                            <div className={Styles.service_box}>
                                 <h3 className={`${Styles.service_emoji}`}><i className="me-3"><LayoutList /></i></h3>
                                 <div className="ms-2">
                                     <h5>Wireframing & Prototyping</h5>
                                     <p>Clear visual plan before development begins</p>
                                 </div>
-                            </motion.div>
+                            </div>
 
-                            <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
+                            <div className={Styles.service_box}>
                                 <h3 className={`${Styles.service_emoji}`}><i className="me-3"><ArrowDownWideNarrow /></i></h3>
                                 <div className="ms-2">
                                     <h5>UI/UX Design</h5>
                                     <p>Beautiful, intuitive designs built for real users.</p>
                                 </div>
-                            </motion.div>
+                            </div>
 
-                            <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
+                            <div className={Styles.service_box}>
                                 <h3 className={Styles.service_emoji}><i className={"me-3"}><MonitorSmartphone /></i></h3>
                                 <div className="ms-2">
                                     <h5>App & Web Development</h5>
                                     <p>secure-responsive and scalable buils for all platforms.</p>
                                 </div>
-                            </motion.div>
+                            </div>
 
-                            <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.service_box}>
+                            <div className={Styles.service_box}>
                                 <h3 className={`${Styles.service_emoji}`}><i className="me-3"><Rocket /></i></h3>
                                 <div className="ms-2">
                                     <h5>Launching and maintenance</h5>
                                     <p>Post-launch support to ensure everything runs smoothly</p>
                                 </div>
-                            </motion.div>
+                            </div>
                         </div>
 
 
@@ -172,10 +172,6 @@ const Nav = () => {
                                     <motion.h1 ref={ref} initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }} className="text-primary text-center">{count} +</motion.h1>
                                     <h6 className="text-white">Happy Clients</h6>
-                                    {/* <div className={Styles.shadow_blue_client}>
-                                        <span></span>
-                                    </div> */}
-                                    {/* <div></div> */}
                                 </div>
                                 <div>
                                     <motion.h1 ref={ref1} initial={{ opacity: 0 }}
@@ -183,196 +179,185 @@ const Nav = () => {
                                     <h6 className="text-white">Project delivered</h6>
                                 </div>
                             </div>
+                        </div>
+                        {/* </div> */}
+                        <div className="bg-black relative" id="about">
+                            <div className={Styles.more_about}>
+                                <motion.h2 ref={ref10} initial={{ opacity: 0, y: 50 }} animate={view10 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} >More About us</motion.h2>
+                            </div>
+
+                            <motion.p initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className="text-white text-center  pb-3">We followed structured, human-centered approach to ensure every product we build is functional, user friendly and impactful.</motion.p>
+                            <div className={Styles.grid_more_about}>
+                                <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                                    <h5 className="text-center pb-3">Discovery & Research</h5>
+                                    <p>We begin understanding your goals, target users, competitors, and project scope. this helps us define the right strategy from the start.</p>
+                                </motion.div>
+                                <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                                    <h5 className="text-center pb-3">Wireframing & Prototyping</h5>
+                                    <p>We create Wireframe and interactive prototypes to visualize the structure and flow of your productt before developmrnt begins. </p>
+                                </motion.div>
+                                <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                                    <h5 className="text-center pb-3">Planning and strategy</h5>
+                                    <p>We outline the user flow, technical requirements and design roadmap. This phase sets the foundation for the designs and development begins. </p>
+                                </motion.div>
+                                <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                                    <h5 className="text-center pb-3">UI/UX Design</h5>
+                                    <p>We design clean, modern and user-friendly interface that align with your brand and deliver a smooth user experience. </p>
+                                </motion.div>
+                                <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                                    <h5 className="text-center pb-3">Development</h5>
+                                    <p>our developrs bring the design to life with clean responsive and scalable code for both web and mobile platform. </p>
+                                </motion.div>
+                                <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                                    <h5 className="text-center pb-3">Testing and quality assurance</h5>
+                                    <p>We rigorousely test the product across devices and scenarios to ensure everything workd perfectly before launch. </p>
+                                </motion.div>
+                                <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                                    <h5 className="text-center pb-3">Launch & Development</h5>
+                                    <p>We deploy your product to the live environment and ensure it is ready for users with full functionality and performance optimization. </p>
+                                </motion.div>
+                                <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
+                                    <h5 className="text-center pb-3">Post-Launch Support</h5>
+                                    <p>We provide ongoing support, updates fix bugs and improvement to ensure your product continues to evolve and perform well. </p>
+                                </motion.div>
+                            </div>
+                        </div>
+                        <div className="bg-black pt-5" id="company">
+                            <motion.div ref={ref20} initial={{ opacity: 0, y: -50 }} animate={view20 ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.servicesDiv}>
+                                <h2 className="text-white ps-3 pe-3">Our Work</h2>
+                            </motion.div>
+
+                            <div className={Styles.work_container}>
+                                <div className={Styles.work_border}>
+                                    <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
+                                        <h4 className="text-center">Easy Travel</h4>
+                                        <p className="text-center">EASY TRAVEL is a simple and user-friendly traveling website for exploring destination and booking with ease</p>
+                                        <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
+                                    </motion.div>
+                                    <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
+                                        <Image className={Styles.ease_img} src={gateway} alt="Travel Ease" />
+                                    </motion.div>
+                                </div>
+                                <div className={Styles.work_border}>
+                                    <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
+                                        <h4 className="text-center">Global VPN</h4>
+                                        <p className="text-center">GLOBAL VPN is a fast and secure mobile app that allows users browse privately and access content from anywhere.</p>
+                                        <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
+                                    </motion.div>
+                                    <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
+                                        <Image className={Styles.ease_img} src={global} alt="Travel Ease" />
+                                    </motion.div>
+                                </div>
+                                <div className={Styles.work_border}>
+                                    <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
+                                        <h4 className="text-center">Music Play</h4>
+                                        <p className="text-center">MUSIC PLAY is a sleek music app build to let user easily play, organize and enjoy their favorite song anytime, it features a clean interface,
+                                        </p>
+                                        <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
+                                    </motion.div>
+                                    <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
+                                        <Image className={Styles.ease_img} src={welcome} alt="Travel Ease" />
+                                    </motion.div>
+                                </div>
+                                <div className={Styles.work_border}>
+                                    <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
+                                        <h4 className="text-center">Cryptra Website</h4>
+                                        <p className="text-center">CRYPTRA is a secure website for trading and managing digital assets.
+                                        </p>
+                                        <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
+                                    </motion.div>
+                                    <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
+                                        <Image className={Styles.ease_img} src={cripto} alt="Travel Ease" />
+                                    </motion.div>
+                                </div>
+                            </div>
+                            {/* </div> */}
+                            {/* <div className="large-padd pt-5 pb-4"> */}
+                            <motion.h1 ref={ref21}
+                                initial={{ opacity: 0, y: 50 }} animate={view21 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }}
+                                className="text-white text-center pt-5">At the Helm of Mayon</motion.h1>
+                            <div className={Styles.grid_passport}>
+                                <div>
+                                    <h2 className="text-primary">Saliu Johnson</h2>
+                                    <p className="text-white fw-bold">CEO & Founder, Mayon Innovation and Technology </p>
+                                    <p className="text-white helmOfMayour">As the founder and CEO of Mayon innovation and technology, I am driving by passion for transforming bold ideas into meaningful digital solution. At Mayon, we did not just build products,
+                                        we focus on innovation, simplicity and scalability. Our mission is clear: to help bussinesses grow by delivering fast, reliable and user-focusedtech solution that truly work. Whether it is through design, develpment
+                                        or ongoing support, we are here to turn vission into value, one project at a time.
+                                    </p>
+                                </div>
+                                <div className={Styles.mayonImgDiv}>
+                                    <Image src={papii} alt="CEO Image" className={Styles.mayonImg} />
+                                </div>
+                            </div>
+                            <div className="d-flex justify-content-center pt-5 pb-4"><button type="button" className={Styles.meet}>Meet The Team</button></div>
                             {/* </div> */}
                         </div>
-                    </div>
-                    <div className="bg-black relative" id="about">
-                        <div className={Styles.more_about}>
-                            <motion.h2 ref={ref10} initial={{ opacity: 0, y: 50 }} animate={view10 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} >More About us</motion.h2>
-                        </div>
 
-                        <motion.p initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className="text-white text-center pb-3">We followed structured, human-centered approach to ensure every product we build is functional, user friendly and impactful.</motion.p>
-                        <div className={Styles.grid_more_about}>
-                            <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
-                                <h5 className="text-center pb-3">Discovery & Research</h5>
-                                <p>We begin understanding your goals, target users, competitors, and project scope. this helps us define the right strategy from the start.</p>
-                            </motion.div>
-                            <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
-                                <h5 className="text-center pb-3">Wireframing & Prototyping</h5>
-                                <p>We create Wireframe and interactive prototypes to visualize the structure and flow of your productt before developmrnt begins. </p>
-                            </motion.div>
-                            <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
-                                <h5 className="text-center pb-3">Planning and strategy</h5>
-                                <p>We outline the user flow, technical requirements and design roadmap. This phase sets the foundation for the designs and development begins. </p>
-                            </motion.div>
-                            <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
-                                <h5 className="text-center pb-3">UI/UX Design</h5>
-                                <p>We design clean, modern and user-friendly interface that align with your brand and deliver a smooth user experience. </p>
-                            </motion.div>
-                            <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
-                                <h5 className="text-center pb-3">Development</h5>
-                                <p>our developrs bring the design to life with clean responsive and scalable code for both web and mobile platform. </p>
-                            </motion.div>
-                            <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
-                                <h5 className="text-center pb-3">Testing and quality assurance</h5>
-                                <p>We rigorousely test the product across devices and scenarios to ensure everything workd perfectly before launch. </p>
-                            </motion.div>
-                            <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
-                                <h5 className="text-center pb-3">Launch & Development</h5>
-                                <p>We deploy your product to the live environment and ensure it is ready for users with full functionality and performance optimization. </p>
-                            </motion.div>
-                            <motion.div initial={{ opacity: 0, scale: 0.2 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: false }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.discovery}>
-                                <h5 className="text-center pb-3">Post-Launch Support</h5>
-                                <p>We provide ongoing support, updates fix bugs and improvement to ensure your product continues to evolve and perform well. </p>
-                            </motion.div>
-                        </div>
-                    </div>
-                    <div className="bg-black pt-5" id="company">
-                        {/* <div className="large-padd pt-4"> */}
-                        <motion.div ref={ref20} initial={{ opacity: 0, y: -50 }} animate={view20 ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }} transition={{ duration: 1, ease: "easeIn" }} className={Styles.servicesDiv}>
-                            <h2 className="text-white ps-3 pe-3">Our Work</h2>
-                        </motion.div>
+                        <div className="bg-dark text-white pt-4 ps-3 pe-3 pb-3" id="contact">
 
-                        <div className={Styles.work_container}>
-                            <div className={Styles.work_border}>
-                                {/* <div className={Styles.shadow_blue}>
-                                    <span></span>
-                                </div> */}
-                                <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
-                                    <h4 className="text-center">Easy Travel</h4>
-                                    <p className="text-center">EASY TRAVEL is a simple and user-friendly traveling website for exploring destination and booking with ease</p>
-                                    <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
-                                </motion.div>
-                                <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
-                                    <Image className={Styles.ease_img} src={gateway} alt="Travel Ease" />
-                                </motion.div>
+                            <div className={Styles.grid_question}>
+                                <div>
+                                    <motion.h2 ref={ref22} initial={{ opacity: 0, y: 50 }} animate={view22 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className="text-primary pb-4">Have Questions? Reach Out</motion.h2>
+                                    <p>We will love to hear from you. Fill out the form and we will get back to you soon.</p>
+                                    <div className="d-flex">
+                                        <i className="bi bi-telephone pe-2 text-primary"></i>
+                                        <p>+234 810 340 0258</p>
+                                    </div>
+                                    <div className="d-flex">
+                                        <i className="bi bi-envelope pe-2 text-primary"></i>
+                                        <p>Mayoninnovation@gmail.com</p>
+                                    </div>
+                                    <div className="d-flex insta-div">
+                                        <div className="insta-bg instagram"><i className="bi bi-instagram text-black"></i></div>
+                                        <i className="bi bi-facebook pe-3 ps-3 face"></i>
+                                        <i className="bi bi-telegram face"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <form className={Styles.form}>
+                                        <label htmlFor="email">Email Address</label> <br />
+                                        <input type="email" id="email" placeholder="Enter Email Address" /> <br />
+                                        <label htmlFor="topic">Your Topic</label> <br />
+                                        <input type="email" id="email" placeholder="Enter Your Topic" /> <br />
+                                        <button type="button" className="btn btn-primary">Send Message</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div className={Styles.work_border}>
-                                <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
-                                    <h4 className="text-center">Global VPN</h4>
-                                    <p className="text-center">GLOBAL VPN is a fast and secure mobile app that allows users browse privately and access content from anywhere.</p>
-                                    <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
-                                </motion.div>
-                                <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
-                                    <Image className={Styles.ease_img} src={global} alt="Travel Ease" />
-                                </motion.div>
-                            </div>
-                            <div className={Styles.work_border}>
-                                {/* <div className={Styles.shadow_blue_music}>
-                                    <span></span>
-                                </div> */}
-                                <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
-                                    <h4 className="text-center">Music Play</h4>
-                                    <p className="text-center">MUSIC PLAY is a sleek music app build to let user easily play, organize and enjoy their favorite song anytime, it features a clean interface,
-                                    </p>
-                                    <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
-                                </motion.div>
-                                <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
-                                    <Image className={Styles.ease_img} src={welcome} alt="Travel Ease" />
-                                </motion.div>
-                            </div>
-                            <div className={Styles.work_border}>
-                                <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.work_text}>
-                                    <h4 className="text-center">Cryptra Website</h4>
-                                    <p className="text-center">CRYPTRA is a secure website for trading and managing digital assets.
-                                    </p>
-                                    <div className="d-flex justify-content-center pt-4"><button className={Styles.btn_hover} type="button">Show Case Study</button></div>
-                                </motion.div>
-                                <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 1.5, ease: "easeInOut" }} className={Styles.ease_imgDiv}>
-                                    <Image className={Styles.ease_img} src={cripto} alt="Travel Ease" />
-                                </motion.div>
-                            </div>
+                            {/* </div> */}
                         </div>
-                        {/* </div> */}
-                        {/* <div className="large-padd pt-5 pb-4"> */}
-                        <motion.h1 ref={ref21}
-                            initial={{ opacity: 0, y: 50 }} animate={view21 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }}
-                            className="text-white text-center pt-5">At the Helm of Mayon</motion.h1>
-                        <div className={Styles.grid_passport}>
-                            <div>
-                                <h2 className="text-primary">Saliu Johnson</h2>
-                                <p className="text-white fw-bold">CEO & Founder, Mayon Innovation and Technology </p>
-                                <p className="text-white helmOfMayour">As the founder and CEO of Mayon innovation and technology, I am driving by passion for transforming bold ideas into meaningful digital solution. At Mayon, we did not just build products,
-                                    we focus on innovation, simplicity and scalability. Our mission is clear: to help bussinesses grow by delivering fast, reliable and user-focusedtech solution that truly work. Whether it is through design, develpment
-                                    or ongoing support, we are here to turn vission into value, one project at a time.
-                                </p>
-                            </div>
-                            <div className={Styles.mayonImgDiv}>
-                                <Image src={papii} alt="CEO Image" className={Styles.mayonImg} />
-                            </div>
-                        </div>
-                        <div className="d-flex justify-content-center pt-5 pb-4"><button type="button" className={Styles.meet}>Meet The Team</button></div>
-                        {/* </div> */}
-                    </div>
-
-                    <div className="bg-dark text-white pt-4 ps-3 pe-3 pb-3" id="contact">
-                        {/* <div className="large-padd pt-5 pb-5"> */}
-
-                        <div className={Styles.grid_question}>
-                            {/* <div className={Styles.shadow_blue_question}>
-                                <span></span>
-                            </div> */}
-                            <div>
-                                <motion.h2 ref={ref22} initial={{ opacity: 0, y: 50 }} animate={view22 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 1, ease: "easeIn" }} className="text-primary pb-4">Have Questions? Reach Out</motion.h2>
-                                <p>We will love to hear from you. Fill out the form and we will get back to you soon.</p>
-                                <div className="d-flex">
-                                    <i className="bi bi-telephone pe-2 text-primary"></i>
+                        <footer className={Styles.footer}>
+                            {/* <div className="large-padd"> */}
+                            <div className={Styles.grid_footer}>
+                                <h4 className={Styles.mayon_f_logo}>
+                                    <h1 className={Styles.mayon_m}>M</h1>
+                                    <div className={Styles.Tech}>
+                                        <h4 className={Styles.mayon_w}>MAYON</h4>
+                                        <h6 className={Styles.innovation}>INNOVATION & TECHNOLOGY</h6>
+                                    </div>
+                                </h4>
+                                <div>
+                                    <h5>Services</h5>
+                                    <p>Company</p>
+                                    <p>Features</p>
+                                    <p>Career</p>
+                                </div>
+                                <div>
+                                    <h5>About</h5>
+                                    <p>Customer Support</p>
+                                    <p>Terms</p>
+                                    <p>Privacy</p>
+                                    <p>FAQ</p>
+                                </div>
+                                <div>
+                                    <h5>Contact</h5>
+                                    <p>Reach out to us easily</p>
+                                    <p>Mayoninnovation@gmail.com</p>
                                     <p>+234 810 340 0258</p>
                                 </div>
-                                <div className="d-flex">
-                                    <i className="bi bi-envelope pe-2 text-primary"></i>
-                                    <p>Mayoninnovation@gmail.com</p>
-                                </div>
-                                <div className="d-flex insta-div">
-                                    <div className="insta-bg instagram"><i className="bi bi-instagram text-black"></i></div>
-                                    <i className="bi bi-facebook pe-3 ps-3 face"></i>
-                                    <i className="bi bi-telegram face"></i>
-                                </div>
                             </div>
-                            <div>
-                                <form className={Styles.form}>
-                                    <label htmlFor="email">Email Address</label> <br />
-                                    <input type="email" id="email" placeholder="Enter Email Address" /> <br />
-                                    <label htmlFor="topic">Your Topic</label> <br />
-                                    <input type="email" id="email" placeholder="Enter Your Topic" /> <br />
-                                    <button type="button" className="btn btn-primary">Send Message</button>
-                                </form>
-                            </div>
-                        </div>
-                        {/* </div> */}
+
+                        </footer>
                     </div>
-                    <footer className={Styles.footer}>
-                        {/* <div className="large-padd"> */}
-                        <div className={Styles.grid_footer}>
-                            <h4 className={Styles.mayon_f_logo}>
-                                <h1 className={Styles.mayon_m}>M</h1>
-                                <div className={Styles.Tech}>
-                                    <h4 className={Styles.mayon_w}>MAYON</h4>
-                                    <h6 className={Styles.innovation}>INNOVATION & TECHNOLOGY</h6>
-                                </div>
-                            </h4>
-                            <div>
-                                <h5>Services</h5>
-                                <p>Company</p>
-                                <p>Features</p>
-                                <p>Career</p>
-                            </div>
-                            <div>
-                                <h5>About</h5>
-                                <p>Customer Support</p>
-                                <p>Terms</p>
-                                <p>Privacy</p>
-                                <p>FAQ</p>
-                            </div>
-                            <div>
-                                <h5>Contact</h5>
-                                <p>Reach out to us easily</p>
-                                <p>Mayoninnovation@gmail.com</p>
-                                <p>+234 810 340 0258</p>
-                            </div>
-                        </div>
-                        
-                    </footer>
                     <p className="pt-4 text-light text-center">Copyright@2025 Mayon. All Right Reserved.</p>
                 </div>
             </div>
