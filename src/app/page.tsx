@@ -371,8 +371,9 @@ const Nav = () => {
                                 <p>+234 810 340 0258</p>
                             </div>
                         </div>
-                        <p className="pt-4">Copyright@2025 Mayon. All Right Reserved.</p>
+                        
                     </footer>
+                    <p className="pt-4">Copyright@2025 Mayon. All Right Reserved.</p>
                 </div>
             </div>
         </>
