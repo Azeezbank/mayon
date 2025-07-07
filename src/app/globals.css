@@ -65,12 +65,18 @@ nav {
 }
 .insta-bg {
   background-color: #fff;
-  width: 28px;
-  height: 28px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.face {
+  font-size: 25px;
+}
+.instagram {
+  font-size: 20px;
 }
 
 @media (max-width: 750px) {
