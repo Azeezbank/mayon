@@ -103,7 +103,7 @@ const Nav = () => {
                     </div>
                 </nav>
 
-                <div className="bg-black ps-2 pe-2" id="service">
+                <div className="bg-black pb-2 ps-2 pe-2" id="service">
                     <div className="large-padd">
                         <main className={Styles.main_page} id="home">
                             <div className={Styles.grid_main}>
@@ -373,7 +373,7 @@ const Nav = () => {
                         </div>
                         
                     </footer>
-                    <p className="pt-4">Copyright@2025 Mayon. All Right Reserved.</p>
+                    <p className="pt-4 text-white">Copyright@2025 Mayon. All Right Reserved.</p>
                 </div>
             </div>
         </>
