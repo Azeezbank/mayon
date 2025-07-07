@@ -318,7 +318,7 @@ const Nav = () => {
                                         <label htmlFor="email">Email Address</label> <br />
                                         <input type="email" id="email" placeholder="Enter Email Address" /> <br />
                                         <label htmlFor="topic">Your Topic</label> <br />
-                                        <input type="email" id="email" placeholder="Enter Your Topic" /> <br />
+                                        <input type="text" id="topic" placeholder="Enter Your Topic" /> <br />
                                         <button type="button" className="btn btn-primary">Send Message</button>
                                     </form>
                                 </div>
